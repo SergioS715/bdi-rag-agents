@@ -1,0 +1,469 @@
+juez;prompt;actor;pregunta_texto;condicion;score
+GPT-5;1;tercero;Algunos dicen que quienes estaban ahí terminaron normalizando lo que pasaba. ¿Usted cómo lo vivió?;baseline;4
+GPT-5;1;tercero;Algunos dicen que quienes estaban ahí terminaron normalizando lo que pasaba. ¿Usted cómo lo vivió?;rag_only;6
+GPT-5;1;tercero;Algunos dicen que quienes estaban ahí terminaron normalizando lo que pasaba. ¿Usted cómo lo vivió?;bdi_only;5
+GPT-5;1;tercero;Algunos dicen que quienes estaban ahí terminaron normalizando lo que pasaba. ¿Usted cómo lo vivió?;bdi_rag;8
+GPT-5;2;victima;Cuénteme qué pasó el día que se agravó la situación y tuvieron que salir.;baseline;5
+GPT-5;2;victima;Cuénteme qué pasó el día que se agravó la situación y tuvieron que salir.;rag_only;7
+GPT-5;2;victima;Cuénteme qué pasó el día que se agravó la situación y tuvieron que salir.;bdi_only;6
+GPT-5;2;victima;Cuénteme qué pasó el día que se agravó la situación y tuvieron que salir.;bdi_rag;9
+GPT-5;3;victimario;Cuénteme sobre una operación en la que participó y que hoy reconoce que afectó a la comunidad.;baseline;5
+GPT-5;3;victimario;Cuénteme sobre una operación en la que participó y que hoy reconoce que afectó a la comunidad.;rag_only;8
+GPT-5;3;victimario;Cuénteme sobre una operación en la que participó y que hoy reconoce que afectó a la comunidad.;bdi_only;6
+GPT-5;3;victimario;Cuénteme sobre una operación en la que participó y que hoy reconoce que afectó a la comunidad.;bdi_rag;7
+GPT-5;4;victima;Después de todo lo que pasó, ¿qué significa para usted que haya verdad o justicia?;baseline;5
+GPT-5;4;victima;Después de todo lo que pasó, ¿qué significa para usted que haya verdad o justicia?;rag_only;8
+GPT-5;4;victima;Después de todo lo que pasó, ¿qué significa para usted que haya verdad o justicia?;bdi_only;4
+GPT-5;4;victima;Después de todo lo que pasó, ¿qué significa para usted que haya verdad o justicia?;bdi_rag;7
+GPT-5;5;victimario;Muchas víctimas dicen que excombatientes minimizan lo que hicieron. ¿Está contando todo como fue?;baseline;7
+GPT-5;5;victimario;Muchas víctimas dicen que excombatientes minimizan lo que hicieron. ¿Está contando todo como fue?;rag_only;8
+GPT-5;5;victimario;Muchas víctimas dicen que excombatientes minimizan lo que hicieron. ¿Está contando todo como fue?;bdi_only;6
+GPT-5;5;victimario;Muchas víctimas dicen que excombatientes minimizan lo que hicieron. ¿Está contando todo como fue?;bdi_rag;5
+GPT-5;6;tercero;¿Cree que pudo haber hecho algo más frente a lo que estaba ocurriendo en la comunidad?;baseline;5
+GPT-5;6;tercero;¿Cree que pudo haber hecho algo más frente a lo que estaba ocurriendo en la comunidad?;rag_only;7
+GPT-5;6;tercero;¿Cree que pudo haber hecho algo más frente a lo que estaba ocurriendo en la comunidad?;bdi_only;6
+GPT-5;6;tercero;¿Cree que pudo haber hecho algo más frente a lo que estaba ocurriendo en la comunidad?;bdi_rag;8
+GPT-5;7;tercero;¿Cuál era su rol en la región y desde cuándo estaba en esa zona de orden público?;baseline;7
+GPT-5;7;tercero;¿Cuál era su rol en la región y desde cuándo estaba en esa zona de orden público?;rag_only;5
+GPT-5;7;tercero;¿Cuál era su rol en la región y desde cuándo estaba en esa zona de orden público?;bdi_only;6
+GPT-5;7;tercero;¿Cuál era su rol en la región y desde cuándo estaba en esa zona de orden público?;bdi_rag;9
+GPT-5;8;victimario;¿Cuántos años tenía cuando se vinculó a la organización y cómo fue ese proceso?;baseline;6
+GPT-5;8;victimario;¿Cuántos años tenía cuando se vinculó a la organización y cómo fue ese proceso?;rag_only;7
+GPT-5;8;victimario;¿Cuántos años tenía cuando se vinculó a la organización y cómo fue ese proceso?;bdi_only;5
+GPT-5;8;victimario;¿Cuántos años tenía cuando se vinculó a la organización y cómo fue ese proceso?;bdi_rag;8
+GPT-5;9;victima;¿Cómo cambió su vida y la de su familia después de eso?;baseline;6
+GPT-5;9;victima;¿Cómo cambió su vida y la de su familia después de eso?;rag_only;7
+GPT-5;9;victima;¿Cómo cambió su vida y la de su familia después de eso?;bdi_only;5
+GPT-5;9;victima;¿Cómo cambió su vida y la de su familia después de eso?;bdi_rag;8
+GPT-5;10;victimario;¿Cómo era la vida dentro de la organización y qué tipo de órdenes recibía?;baseline;5
+GPT-5;10;victimario;¿Cómo era la vida dentro de la organización y qué tipo de órdenes recibía?;rag_only;7
+GPT-5;10;victimario;¿Cómo era la vida dentro de la organización y qué tipo de órdenes recibía?;bdi_only;6
+GPT-5;10;victimario;¿Cómo era la vida dentro de la organización y qué tipo de órdenes recibía?;bdi_rag;8
+GPT-5;11;victima;¿Cómo era la vida en la vereda antes de que llegaran esos grupos armados?;baseline;7
+GPT-5;11;victima;¿Cómo era la vida en la vereda antes de que llegaran esos grupos armados?;rag_only;6
+GPT-5;11;victima;¿Cómo era la vida en la vereda antes de que llegaran esos grupos armados?;bdi_only;5
+GPT-5;11;victima;¿Cómo era la vida en la vereda antes de que llegaran esos grupos armados?;bdi_rag;9
+GPT-5;12;tercero;¿Cómo era la vida en la vereda o el casco urbano antes de que aumentara la presencia de grupos armados?;baseline;7
+GPT-5;12;tercero;¿Cómo era la vida en la vereda o el casco urbano antes de que aumentara la presencia de grupos armados?;rag_only;6
+GPT-5;12;tercero;¿Cómo era la vida en la vereda o el casco urbano antes de que aumentara la presencia de grupos armados?;bdi_only;5
+GPT-5;12;tercero;¿Cómo era la vida en la vereda o el casco urbano antes de que aumentara la presencia de grupos armados?;bdi_rag;8
+GPT-5;13;victima;¿Cómo fue ese proceso de desplazamiento hasta llegar a otro lugar?;baseline;6
+GPT-5;13;victima;¿Cómo fue ese proceso de desplazamiento hasta llegar a otro lugar?;rag_only;7
+GPT-5;13;victima;¿Cómo fue ese proceso de desplazamiento hasta llegar a otro lugar?;bdi_only;6
+GPT-5;13;victima;¿Cómo fue ese proceso de desplazamiento hasta llegar a otro lugar?;bdi_rag;9
+GPT-5;14;victimario;¿Cómo ha sido el proceso de reintegrarse a la vida civil después de salir de esa estructura?;baseline;6
+GPT-5;14;victimario;¿Cómo ha sido el proceso de reintegrarse a la vida civil después de salir de esa estructura?;rag_only;8
+GPT-5;14;victimario;¿Cómo ha sido el proceso de reintegrarse a la vida civil después de salir de esa estructura?;bdi_only;5
+GPT-5;14;victimario;¿Cómo ha sido el proceso de reintegrarse a la vida civil después de salir de esa estructura?;bdi_rag;7
+GPT-5;15;victimario;¿Cómo justificaban dentro del grupo esas acciones frente a la población civil?;baseline;5
+GPT-5;15;victimario;¿Cómo justificaban dentro del grupo esas acciones frente a la población civil?;rag_only;7
+GPT-5;15;victimario;¿Cómo justificaban dentro del grupo esas acciones frente a la población civil?;bdi_only;6
+GPT-5;15;victimario;¿Cómo justificaban dentro del grupo esas acciones frente a la población civil?;bdi_rag;8
+GPT-5;16;victima;¿Cómo responde a quienes dicen que en esas zonas había colaboración con los grupos?;baseline;4
+GPT-5;16;victima;¿Cómo responde a quienes dicen que en esas zonas había colaboración con los grupos?;rag_only;8
+GPT-5;16;victima;¿Cómo responde a quienes dicen que en esas zonas había colaboración con los grupos?;bdi_only;6
+GPT-5;16;victima;¿Cómo responde a quienes dicen que en esas zonas había colaboración con los grupos?;bdi_rag;9
+GPT-5;17;tercero;¿Cómo se relacionaban los civiles con esos grupos para poder mantenerse en el territorio?;baseline;5
+GPT-5;17;tercero;¿Cómo se relacionaban los civiles con esos grupos para poder mantenerse en el territorio?;rag_only;7
+GPT-5;17;tercero;¿Cómo se relacionaban los civiles con esos grupos para poder mantenerse en el territorio?;bdi_only;6
+GPT-5;17;tercero;¿Cómo se relacionaban los civiles con esos grupos para poder mantenerse en el territorio?;bdi_rag;9
+GPT-5;18;victima;¿De qué vereda o municipio lo sacaron y que grupo tenhia la presencia armada en esa zona?;baseline;6
+GPT-5;18;victima;¿De qué vereda o municipio lo sacaron y que grupo tenhia la presencia armada en esa zona?;rag_only;5
+GPT-5;18;victima;¿De qué vereda o municipio lo sacaron y que grupo tenhia la presencia armada en esa zona?;bdi_only;9
+GPT-5;18;victima;¿De qué vereda o municipio lo sacaron y que grupo tenhia la presencia armada en esa zona?;bdi_rag;8
+GPT-5;19;victima;¿Fue por amenaza directa, operativo o algo que pasó en la comunidad?;baseline;6
+GPT-5;19;victima;¿Fue por amenaza directa, operativo o algo que pasó en la comunidad?;rag_only;5
+GPT-5;19;victima;¿Fue por amenaza directa, operativo o algo que pasó en la comunidad?;bdi_only;7
+GPT-5;19;victima;¿Fue por amenaza directa, operativo o algo que pasó en la comunidad?;bdi_rag;8
+GPT-5;20;tercero;¿Le tocó ver directamente desplazamientos, reclutamientos u otras acciones contra la comunidad?;baseline;6
+GPT-5;20;tercero;¿Le tocó ver directamente desplazamientos, reclutamientos u otras acciones contra la comunidad?;rag_only;5
+GPT-5;20;tercero;¿Le tocó ver directamente desplazamientos, reclutamientos u otras acciones contra la comunidad?;bdi_only;7
+GPT-5;20;tercero;¿Le tocó ver directamente desplazamientos, reclutamientos u otras acciones contra la comunidad?;bdi_rag;8
+GPT-5;21;victimario;¿No cree que, más allá de las órdenes, usted tiene responsabilidad directa en lo que pasó?;baseline;6
+GPT-5;21;victimario;¿No cree que, más allá de las órdenes, usted tiene responsabilidad directa en lo que pasó?;rag_only;7
+GPT-5;21;victimario;¿No cree que, más allá de las órdenes, usted tiene responsabilidad directa en lo que pasó?;bdi_only;5
+GPT-5;21;victimario;¿No cree que, más allá de las órdenes, usted tiene responsabilidad directa en lo que pasó?;bdi_rag;7
+GPT-5;22;victima;¿Por qué no se fueron antes si ya había presencia de grupos armados?;baseline;7
+GPT-5;22;victima;¿Por qué no se fueron antes si ya había presencia de grupos armados?;rag_only;9
+GPT-5;22;victima;¿Por qué no se fueron antes si ya había presencia de grupos armados?;bdi_only;5
+GPT-5;22;victima;¿Por qué no se fueron antes si ya había presencia de grupos armados?;bdi_rag;8
+GPT-5;23;victimario;¿Por qué razón decidió unirse? ¿Fue reclutamiento forzado o decisión propia?;baseline;5
+GPT-5;23;victimario;¿Por qué razón decidió unirse? ¿Fue reclutamiento forzado o decisión propia?;rag_only;7
+GPT-5;23;victimario;¿Por qué razón decidió unirse? ¿Fue reclutamiento forzado o decisión propia?;bdi_only;6
+GPT-5;23;victimario;¿Por qué razón decidió unirse? ¿Fue reclutamiento forzado o decisión propia?;bdi_rag;9
+GPT-5;24;tercero;¿Qué actores armados tenían presencia en el territorio y cómo se percibía su control?;baseline;5
+GPT-5;24;tercero;¿Qué actores armados tenían presencia en el territorio y cómo se percibía su control?;rag_only;7
+GPT-5;24;tercero;¿Qué actores armados tenían presencia en el territorio y cómo se percibía su control?;bdi_only;6
+GPT-5;24;tercero;¿Qué actores armados tenían presencia en el territorio y cómo se percibía su control?;bdi_rag;9
+GPT-5;25;victima;¿Qué cosas de la vereda o de su vida anterior siente que no pudo recuperar?;baseline;6
+GPT-5;25;victima;¿Qué cosas de la vereda o de su vida anterior siente que no pudo recuperar?;rag_only;9
+GPT-5;25;victima;¿Qué cosas de la vereda o de su vida anterior siente que no pudo recuperar?;bdi_only;5
+GPT-5;25;victima;¿Qué cosas de la vereda o de su vida anterior siente que no pudo recuperar?;bdi_rag;8
+GPT-5;26;tercero;¿Qué cree que debería saberse o reconocerse sobre lo que usted vio y no siempre se cuenta?;baseline;5
+GPT-5;26;tercero;¿Qué cree que debería saberse o reconocerse sobre lo que usted vio y no siempre se cuenta?;rag_only;7
+GPT-5;26;tercero;¿Qué cree que debería saberse o reconocerse sobre lo que usted vio y no siempre se cuenta?;bdi_only;4
+GPT-5;26;tercero;¿Qué cree que debería saberse o reconocerse sobre lo que usted vio y no siempre se cuenta?;bdi_rag;9
+GPT-5;27;tercero;¿Qué fue lo más difícil de estar en medio de esa situación sin ser parte directa?;baseline;6
+GPT-5;27;tercero;¿Qué fue lo más difícil de estar en medio de esa situación sin ser parte directa?;rag_only;7
+GPT-5;27;tercero;¿Qué fue lo más difícil de estar en medio de esa situación sin ser parte directa?;bdi_only;8
+GPT-5;27;tercero;¿Qué fue lo más difícil de estar en medio de esa situación sin ser parte directa?;bdi_rag;5
+GPT-5;28;victima;¿Qué fue lo más duro de tener que dejar el territorio así?;baseline;6
+GPT-5;28;victima;¿Qué fue lo más duro de tener que dejar el territorio así?;rag_only;8
+GPT-5;28;victima;¿Qué fue lo más duro de tener que dejar el territorio así?;bdi_only;5
+GPT-5;28;victima;¿Qué fue lo más duro de tener que dejar el territorio así?;bdi_rag;7
+GPT-5;29;victimario;¿Qué lo llevó a tomar la decisión de desmovilizarse o dejar la organización?;baseline;5
+GPT-5;29;victimario;¿Qué lo llevó a tomar la decisión de desmovilizarse o dejar la organización?;rag_only;8
+GPT-5;29;victimario;¿Qué lo llevó a tomar la decisión de desmovilizarse o dejar la organización?;bdi_only;6
+GPT-5;29;victimario;¿Qué lo llevó a tomar la decisión de desmovilizarse o dejar la organización?;bdi_rag;7
+GPT-5;30;victimario;¿Qué papel cumplía dentro de la estructura: miliciano, combatiente o parte del mando?;baseline;5
+GPT-5;30;victimario;¿Qué papel cumplía dentro de la estructura: miliciano, combatiente o parte del mando?;rag_only;8
+GPT-5;30;victimario;¿Qué papel cumplía dentro de la estructura: miliciano, combatiente o parte del mando?;bdi_only;6
+GPT-5;30;victimario;¿Qué papel cumplía dentro de la estructura: miliciano, combatiente o parte del mando?;bdi_rag;7
+GPT-5;31;victimario;¿Qué piensa hoy sobre las personas que fueron desplazadas o afectadas por esas decisiones?;baseline;5
+GPT-5;31;victimario;¿Qué piensa hoy sobre las personas que fueron desplazadas o afectadas por esas decisiones?;rag_only;8
+GPT-5;31;victimario;¿Qué piensa hoy sobre las personas que fueron desplazadas o afectadas por esas decisiones?;bdi_only;4
+GPT-5;31;victimario;¿Qué piensa hoy sobre las personas que fueron desplazadas o afectadas por esas decisiones?;bdi_rag;7
+GPT-5;32;victimario;¿Qué significa hoy para usted asumir responsabilidad o pedir perdón por lo que ocurrió?;baseline;6
+GPT-5;32;victimario;¿Qué significa hoy para usted asumir responsabilidad o pedir perdón por lo que ocurrió?;rag_only;8
+GPT-5;32;victimario;¿Qué significa hoy para usted asumir responsabilidad o pedir perdón por lo que ocurrió?;bdi_only;5
+GPT-5;32;victimario;¿Qué significa hoy para usted asumir responsabilidad o pedir perdón por lo que ocurrió?;bdi_rag;7
+GPT-5;33;tercero;¿Qué significa para usted hablar ahora de lo que pasó en ese tiempo?;baseline;4
+GPT-5;33;tercero;¿Qué significa para usted hablar ahora de lo que pasó en ese tiempo?;rag_only;8
+GPT-5;33;tercero;¿Qué significa para usted hablar ahora de lo que pasó en ese tiempo?;bdi_only;5
+GPT-5;33;tercero;¿Qué significa para usted hablar ahora de lo que pasó en ese tiempo?;bdi_rag;7
+GPT-5;34;tercero;¿Qué tipo de situaciones empezó a notar cuando la dinámica del conflicto se hizo más fuerte?;baseline;5
+GPT-5;34;tercero;¿Qué tipo de situaciones empezó a notar cuando la dinámica del conflicto se hizo más fuerte?;rag_only;8
+GPT-5;34;tercero;¿Qué tipo de situaciones empezó a notar cuando la dinámica del conflicto se hizo más fuerte?;bdi_only;4
+GPT-5;34;tercero;¿Qué tipo de situaciones empezó a notar cuando la dinámica del conflicto se hizo más fuerte?;bdi_rag;9
+GPT-5;35;tercero;¿Sintió en algún momento que sabía más de lo que podía decir o hacer?;baseline;8
+GPT-5;35;tercero;¿Sintió en algún momento que sabía más de lo que podía decir o hacer?;rag_only;9
+GPT-5;35;tercero;¿Sintió en algún momento que sabía más de lo que podía decir o hacer?;bdi_only;6
+GPT-5;35;tercero;¿Sintió en algún momento que sabía más de lo que podía decir o hacer?;bdi_rag;5
+GPT-5;36;victima;¿Sintió que quedaron desprotegidos o abandonados por el Estado en ese momento?;baseline;4
+GPT-5;36;victima;¿Sintió que quedaron desprotegidos o abandonados por el Estado en ese momento?;rag_only;9
+GPT-5;36;victima;¿Sintió que quedaron desprotegidos o abandonados por el Estado en ese momento?;bdi_only;7
+GPT-5;36;victima;¿Sintió que quedaron desprotegidos o abandonados por el Estado en ese momento?;bdi_rag;6
+GPT-5;37;tercero;¿Su seguridad se vio comprometida por lo que sabía o por lo que veía en la zona?;baseline;8
+GPT-5;37;tercero;¿Su seguridad se vio comprometida por lo que sabía o por lo que veía en la zona?;rag_only;6
+GPT-5;37;tercero;¿Su seguridad se vio comprometida por lo que sabía o por lo que veía en la zona?;bdi_only;5
+GPT-5;37;tercero;¿Su seguridad se vio comprometida por lo que sabía o por lo que veía en la zona?;bdi_rag;9
+GPT-5;38;victima;¿Usted cree que algo en la comunidad pudo haber influido en que llegara la violencia?;baseline;4
+GPT-5;38;victima;¿Usted cree que algo en la comunidad pudo haber influido en que llegara la violencia?;rag_only;7
+GPT-5;38;victima;¿Usted cree que algo en la comunidad pudo haber influido en que llegara la violencia?;bdi_only;6
+GPT-5;38;victima;¿Usted cree que algo en la comunidad pudo haber influido en que llegara la violencia?;bdi_rag;9
+GPT-5;39;victimario;¿Usted sentía que tenía opción de no cumplir una orden del mando?;baseline;5
+GPT-5;39;victimario;¿Usted sentía que tenía opción de no cumplir una orden del mando?;rag_only;8
+GPT-5;39;victimario;¿Usted sentía que tenía opción de no cumplir una orden del mando?;bdi_only;6
+GPT-5;39;victimario;¿Usted sentía que tenía opción de no cumplir una orden del mando?;bdi_rag;7
+Gemini3Flash;1;tercero;Algunos dicen que quienes estaban ahí terminaron normalizando lo que pasaba. ¿Usted cómo lo vivió?;baseline;5
+Gemini3Flash;1;tercero;Algunos dicen que quienes estaban ahí terminaron normalizando lo que pasaba. ¿Usted cómo lo vivió?;rag_only;9
+Gemini3Flash;1;tercero;Algunos dicen que quienes estaban ahí terminaron normalizando lo que pasaba. ¿Usted cómo lo vivió?;bdi_only;4
+Gemini3Flash;1;tercero;Algunos dicen que quienes estaban ahí terminaron normalizando lo que pasaba. ¿Usted cómo lo vivió?;bdi_rag;7
+Gemini3Flash;2;victima;Cuénteme qué pasó el día que se agravó la situación y tuvieron que salir.;baseline;3
+Gemini3Flash;2;victima;Cuénteme qué pasó el día que se agravó la situación y tuvieron que salir.;rag_only;7
+Gemini3Flash;2;victima;Cuénteme qué pasó el día que se agravó la situación y tuvieron que salir.;bdi_only;5
+Gemini3Flash;2;victima;Cuénteme qué pasó el día que se agravó la situación y tuvieron que salir.;bdi_rag;9
+Gemini3Flash;3;victimario;Cuénteme sobre una operación en la que participó y que hoy reconoce que afectó a la comunidad.;baseline;4
+Gemini3Flash;3;victimario;Cuénteme sobre una operación en la que participó y que hoy reconoce que afectó a la comunidad.;rag_only;9
+Gemini3Flash;3;victimario;Cuénteme sobre una operación en la que participó y que hoy reconoce que afectó a la comunidad.;bdi_only;5
+Gemini3Flash;3;victimario;Cuénteme sobre una operación en la que participó y que hoy reconoce que afectó a la comunidad.;bdi_rag;7
+Gemini3Flash;4;victima;Después de todo lo que pasó, ¿qué significa para usted que haya verdad o justicia?;baseline;5
+Gemini3Flash;4;victima;Después de todo lo que pasó, ¿qué significa para usted que haya verdad o justicia?;rag_only;7
+Gemini3Flash;4;victima;Después de todo lo que pasó, ¿qué significa para usted que haya verdad o justicia?;bdi_only;3
+Gemini3Flash;4;victima;Después de todo lo que pasó, ¿qué significa para usted que haya verdad o justicia?;bdi_rag;8
+Gemini3Flash;5;victimario;Muchas víctimas dicen que excombatientes minimizan lo que hicieron. ¿Está contando todo como fue?;baseline;5
+Gemini3Flash;5;victimario;Muchas víctimas dicen que excombatientes minimizan lo que hicieron. ¿Está contando todo como fue?;rag_only;9
+Gemini3Flash;5;victimario;Muchas víctimas dicen que excombatientes minimizan lo que hicieron. ¿Está contando todo como fue?;bdi_only;4
+Gemini3Flash;5;victimario;Muchas víctimas dicen que excombatientes minimizan lo que hicieron. ¿Está contando todo como fue?;bdi_rag;7
+Gemini3Flash;6;tercero;¿Cree que pudo haber hecho algo más frente a lo que estaba ocurriendo en la comunidad?;baseline;5
+Gemini3Flash;6;tercero;¿Cree que pudo haber hecho algo más frente a lo que estaba ocurriendo en la comunidad?;rag_only;7
+Gemini3Flash;6;tercero;¿Cree que pudo haber hecho algo más frente a lo que estaba ocurriendo en la comunidad?;bdi_only;4
+Gemini3Flash;6;tercero;¿Cree que pudo haber hecho algo más frente a lo que estaba ocurriendo en la comunidad?;bdi_rag;9
+Gemini3Flash;7;tercero;¿Cuál era su rol en la región y desde cuándo estaba en esa zona de orden público?;baseline;5
+Gemini3Flash;7;tercero;¿Cuál era su rol en la región y desde cuándo estaba en esa zona de orden público?;rag_only;6
+Gemini3Flash;7;tercero;¿Cuál era su rol en la región y desde cuándo estaba en esa zona de orden público?;bdi_only;4
+Gemini3Flash;7;tercero;¿Cuál era su rol en la región y desde cuándo estaba en esa zona de orden público?;bdi_rag;9
+Gemini3Flash;8;victimario;¿Cuántos años tenía cuando se vinculó a la organización y cómo fue ese proceso?;baseline;4
+Gemini3Flash;8;victimario;¿Cuántos años tenía cuando se vinculó a la organización y cómo fue ese proceso?;rag_only;6
+Gemini3Flash;8;victimario;¿Cuántos años tenía cuando se vinculó a la organización y cómo fue ese proceso?;bdi_only;3
+Gemini3Flash;8;victimario;¿Cuántos años tenía cuando se vinculó a la organización y cómo fue ese proceso?;bdi_rag;8
+Gemini3Flash;9;victima;¿Cómo cambió su vida y la de su familia después de eso?;baseline;7
+Gemini3Flash;9;victima;¿Cómo cambió su vida y la de su familia después de eso?;rag_only;9
+Gemini3Flash;9;victima;¿Cómo cambió su vida y la de su familia después de eso?;bdi_only;5
+Gemini3Flash;9;victima;¿Cómo cambió su vida y la de su familia después de eso?;bdi_rag;8
+Gemini3Flash;10;victimario;¿Cómo era la vida dentro de la organización y qué tipo de órdenes recibía?;baseline;5
+Gemini3Flash;10;victimario;¿Cómo era la vida dentro de la organización y qué tipo de órdenes recibía?;rag_only;9
+Gemini3Flash;10;victimario;¿Cómo era la vida dentro de la organización y qué tipo de órdenes recibía?;bdi_only;7
+Gemini3Flash;10;victimario;¿Cómo era la vida dentro de la organización y qué tipo de órdenes recibía?;bdi_rag;8
+Gemini3Flash;11;victima;¿Cómo era la vida en la vereda antes de que llegaran esos grupos armados?;baseline;4
+Gemini3Flash;11;victima;¿Cómo era la vida en la vereda antes de que llegaran esos grupos armados?;rag_only;6
+Gemini3Flash;11;victima;¿Cómo era la vida en la vereda antes de que llegaran esos grupos armados?;bdi_only;7
+Gemini3Flash;11;victima;¿Cómo era la vida en la vereda antes de que llegaran esos grupos armados?;bdi_rag;9
+Gemini3Flash;12;tercero;¿Cómo era la vida en la vereda o el casco urbano antes de que aumentara la presencia de grupos armados?;baseline;5
+Gemini3Flash;12;tercero;¿Cómo era la vida en la vereda o el casco urbano antes de que aumentara la presencia de grupos armados?;rag_only;6
+Gemini3Flash;12;tercero;¿Cómo era la vida en la vereda o el casco urbano antes de que aumentara la presencia de grupos armados?;bdi_only;3
+Gemini3Flash;12;tercero;¿Cómo era la vida en la vereda o el casco urbano antes de que aumentara la presencia de grupos armados?;bdi_rag;9
+Gemini3Flash;13;victima;¿Cómo fue ese proceso de desplazamiento hasta llegar a otro lugar?;baseline;5
+Gemini3Flash;13;victima;¿Cómo fue ese proceso de desplazamiento hasta llegar a otro lugar?;rag_only;8
+Gemini3Flash;13;victima;¿Cómo fue ese proceso de desplazamiento hasta llegar a otro lugar?;bdi_only;7
+Gemini3Flash;13;victima;¿Cómo fue ese proceso de desplazamiento hasta llegar a otro lugar?;bdi_rag;9
+Gemini3Flash;14;victimario;¿Cómo ha sido el proceso de reintegrarse a la vida civil después de salir de esa estructura?;baseline;3
+Gemini3Flash;14;victimario;¿Cómo ha sido el proceso de reintegrarse a la vida civil después de salir de esa estructura?;rag_only;9
+Gemini3Flash;14;victimario;¿Cómo ha sido el proceso de reintegrarse a la vida civil después de salir de esa estructura?;bdi_only;5
+Gemini3Flash;14;victimario;¿Cómo ha sido el proceso de reintegrarse a la vida civil después de salir de esa estructura?;bdi_rag;7
+Gemini3Flash;15;victimario;¿Cómo justificaban dentro del grupo esas acciones frente a la población civil?;baseline;4
+Gemini3Flash;15;victimario;¿Cómo justificaban dentro del grupo esas acciones frente a la población civil?;rag_only;8
+Gemini3Flash;15;victimario;¿Cómo justificaban dentro del grupo esas acciones frente a la población civil?;bdi_only;5
+Gemini3Flash;15;victimario;¿Cómo justificaban dentro del grupo esas acciones frente a la población civil?;bdi_rag;9
+Gemini3Flash;16;victima;¿Cómo responde a quienes dicen que en esas zonas había colaboración con los grupos?;baseline;3
+Gemini3Flash;16;victima;¿Cómo responde a quienes dicen que en esas zonas había colaboración con los grupos?;rag_only;7
+Gemini3Flash;16;victima;¿Cómo responde a quienes dicen que en esas zonas había colaboración con los grupos?;bdi_only;5
+Gemini3Flash;16;victima;¿Cómo responde a quienes dicen que en esas zonas había colaboración con los grupos?;bdi_rag;9
+Gemini3Flash;17;tercero;¿Cómo se relacionaban los civiles con esos grupos para poder mantenerse en el territorio?;baseline;4
+Gemini3Flash;17;tercero;¿Cómo se relacionaban los civiles con esos grupos para poder mantenerse en el territorio?;rag_only;8
+Gemini3Flash;17;tercero;¿Cómo se relacionaban los civiles con esos grupos para poder mantenerse en el territorio?;bdi_only;6
+Gemini3Flash;17;tercero;¿Cómo se relacionaban los civiles con esos grupos para poder mantenerse en el territorio?;bdi_rag;9
+Gemini3Flash;18;victima;¿De qué vereda o municipio lo sacaron y que grupo tenhia la presencia armada en esa zona?;baseline;6
+Gemini3Flash;18;victima;¿De qué vereda o municipio lo sacaron y que grupo tenhia la presencia armada en esa zona?;rag_only;7
+Gemini3Flash;18;victima;¿De qué vereda o municipio lo sacaron y que grupo tenhia la presencia armada en esa zona?;bdi_only;4
+Gemini3Flash;18;victima;¿De qué vereda o municipio lo sacaron y que grupo tenhia la presencia armada en esa zona?;bdi_rag;9
+Gemini3Flash;19;victima;¿Fue por amenaza directa, operativo o algo que pasó en la comunidad?;baseline;7
+Gemini3Flash;19;victima;¿Fue por amenaza directa, operativo o algo que pasó en la comunidad?;rag_only;4
+Gemini3Flash;19;victima;¿Fue por amenaza directa, operativo o algo que pasó en la comunidad?;bdi_only;5
+Gemini3Flash;19;victima;¿Fue por amenaza directa, operativo o algo que pasó en la comunidad?;bdi_rag;9
+Gemini3Flash;20;tercero;¿Le tocó ver directamente desplazamientos, reclutamientos u otras acciones contra la comunidad?;baseline;4
+Gemini3Flash;20;tercero;¿Le tocó ver directamente desplazamientos, reclutamientos u otras acciones contra la comunidad?;rag_only;6
+Gemini3Flash;20;tercero;¿Le tocó ver directamente desplazamientos, reclutamientos u otras acciones contra la comunidad?;bdi_only;3
+Gemini3Flash;20;tercero;¿Le tocó ver directamente desplazamientos, reclutamientos u otras acciones contra la comunidad?;bdi_rag;9
+Gemini3Flash;21;victimario;¿No cree que, más allá de las órdenes, usted tiene responsabilidad directa en lo que pasó?;baseline;4
+Gemini3Flash;21;victimario;¿No cree que, más allá de las órdenes, usted tiene responsabilidad directa en lo que pasó?;rag_only;8
+Gemini3Flash;21;victimario;¿No cree que, más allá de las órdenes, usted tiene responsabilidad directa en lo que pasó?;bdi_only;3
+Gemini3Flash;21;victimario;¿No cree que, más allá de las órdenes, usted tiene responsabilidad directa en lo que pasó?;bdi_rag;6
+Gemini3Flash;22;victima;¿Por qué no se fueron antes si ya había presencia de grupos armados?;baseline;4
+Gemini3Flash;22;victima;¿Por qué no se fueron antes si ya había presencia de grupos armados?;rag_only;9
+Gemini3Flash;22;victima;¿Por qué no se fueron antes si ya había presencia de grupos armados?;bdi_only;3
+Gemini3Flash;22;victima;¿Por qué no se fueron antes si ya había presencia de grupos armados?;bdi_rag;7
+Gemini3Flash;23;victimario;¿Por qué razón decidió unirse? ¿Fue reclutamiento forzado o decisión propia?;baseline;4
+Gemini3Flash;23;victimario;¿Por qué razón decidió unirse? ¿Fue reclutamiento forzado o decisión propia?;rag_only;7
+Gemini3Flash;23;victimario;¿Por qué razón decidió unirse? ¿Fue reclutamiento forzado o decisión propia?;bdi_only;5
+Gemini3Flash;23;victimario;¿Por qué razón decidió unirse? ¿Fue reclutamiento forzado o decisión propia?;bdi_rag;9
+Gemini3Flash;24;tercero;¿Qué actores armados tenían presencia en el territorio y cómo se percibía su control?;baseline;3
+Gemini3Flash;24;tercero;¿Qué actores armados tenían presencia en el territorio y cómo se percibía su control?;rag_only;6
+Gemini3Flash;24;tercero;¿Qué actores armados tenían presencia en el territorio y cómo se percibía su control?;bdi_only;4
+Gemini3Flash;24;tercero;¿Qué actores armados tenían presencia en el territorio y cómo se percibía su control?;bdi_rag;9
+Gemini3Flash;25;victima;¿Qué cosas de la vereda o de su vida anterior siente que no pudo recuperar?;baseline;4
+Gemini3Flash;25;victima;¿Qué cosas de la vereda o de su vida anterior siente que no pudo recuperar?;rag_only;9
+Gemini3Flash;25;victima;¿Qué cosas de la vereda o de su vida anterior siente que no pudo recuperar?;bdi_only;5
+Gemini3Flash;25;victima;¿Qué cosas de la vereda o de su vida anterior siente que no pudo recuperar?;bdi_rag;7
+Gemini3Flash;26;tercero;¿Qué cree que debería saberse o reconocerse sobre lo que usted vio y no siempre se cuenta?;baseline;3
+Gemini3Flash;26;tercero;¿Qué cree que debería saberse o reconocerse sobre lo que usted vio y no siempre se cuenta?;rag_only;7
+Gemini3Flash;26;tercero;¿Qué cree que debería saberse o reconocerse sobre lo que usted vio y no siempre se cuenta?;bdi_only;5
+Gemini3Flash;26;tercero;¿Qué cree que debería saberse o reconocerse sobre lo que usted vio y no siempre se cuenta?;bdi_rag;9
+Gemini3Flash;27;tercero;¿Qué fue lo más difícil de estar en medio de esa situación sin ser parte directa?;baseline;4
+Gemini3Flash;27;tercero;¿Qué fue lo más difícil de estar en medio de esa situación sin ser parte directa?;rag_only;7
+Gemini3Flash;27;tercero;¿Qué fue lo más difícil de estar en medio de esa situación sin ser parte directa?;bdi_only;5
+Gemini3Flash;27;tercero;¿Qué fue lo más difícil de estar en medio de esa situación sin ser parte directa?;bdi_rag;9
+Gemini3Flash;28;victima;¿Qué fue lo más duro de tener que dejar el territorio así?;baseline;4
+Gemini3Flash;28;victima;¿Qué fue lo más duro de tener que dejar el territorio así?;rag_only;9
+Gemini3Flash;28;victima;¿Qué fue lo más duro de tener que dejar el territorio así?;bdi_only;5
+Gemini3Flash;28;victima;¿Qué fue lo más duro de tener que dejar el territorio así?;bdi_rag;7
+Gemini3Flash;29;victimario;¿Qué lo llevó a tomar la decisión de desmovilizarse o dejar la organización?;baseline;3
+Gemini3Flash;29;victimario;¿Qué lo llevó a tomar la decisión de desmovilizarse o dejar la organización?;rag_only;8
+Gemini3Flash;29;victimario;¿Qué lo llevó a tomar la decisión de desmovilizarse o dejar la organización?;bdi_only;5
+Gemini3Flash;29;victimario;¿Qué lo llevó a tomar la decisión de desmovilizarse o dejar la organización?;bdi_rag;6
+Gemini3Flash;30;victimario;¿Qué papel cumplía dentro de la estructura: miliciano, combatiente o parte del mando?;baseline;5
+Gemini3Flash;30;victimario;¿Qué papel cumplía dentro de la estructura: miliciano, combatiente o parte del mando?;rag_only;9
+Gemini3Flash;30;victimario;¿Qué papel cumplía dentro de la estructura: miliciano, combatiente o parte del mando?;bdi_only;4
+Gemini3Flash;30;victimario;¿Qué papel cumplía dentro de la estructura: miliciano, combatiente o parte del mando?;bdi_rag;6
+Gemini3Flash;31;victimario;¿Qué piensa hoy sobre las personas que fueron desplazadas o afectadas por esas decisiones?;baseline;6
+Gemini3Flash;31;victimario;¿Qué piensa hoy sobre las personas que fueron desplazadas o afectadas por esas decisiones?;rag_only;9
+Gemini3Flash;31;victimario;¿Qué piensa hoy sobre las personas que fueron desplazadas o afectadas por esas decisiones?;bdi_only;5
+Gemini3Flash;31;victimario;¿Qué piensa hoy sobre las personas que fueron desplazadas o afectadas por esas decisiones?;bdi_rag;7
+Gemini3Flash;32;victimario;¿Qué significa hoy para usted asumir responsabilidad o pedir perdón por lo que ocurrió?;baseline;4
+Gemini3Flash;32;victimario;¿Qué significa hoy para usted asumir responsabilidad o pedir perdón por lo que ocurrió?;rag_only;9
+Gemini3Flash;32;victimario;¿Qué significa hoy para usted asumir responsabilidad o pedir perdón por lo que ocurrió?;bdi_only;5
+Gemini3Flash;32;victimario;¿Qué significa hoy para usted asumir responsabilidad o pedir perdón por lo que ocurrió?;bdi_rag;7
+Gemini3Flash;33;tercero;¿Qué significa para usted hablar ahora de lo que pasó en ese tiempo?;baseline;5
+Gemini3Flash;33;tercero;¿Qué significa para usted hablar ahora de lo que pasó en ese tiempo?;rag_only;9
+Gemini3Flash;33;tercero;¿Qué significa para usted hablar ahora de lo que pasó en ese tiempo?;bdi_only;4
+Gemini3Flash;33;tercero;¿Qué significa para usted hablar ahora de lo que pasó en ese tiempo?;bdi_rag;7
+Gemini3Flash;34;tercero;¿Qué tipo de situaciones empezó a notar cuando la dinámica del conflicto se hizo más fuerte?;baseline;3
+Gemini3Flash;34;tercero;¿Qué tipo de situaciones empezó a notar cuando la dinámica del conflicto se hizo más fuerte?;rag_only;7
+Gemini3Flash;34;tercero;¿Qué tipo de situaciones empezó a notar cuando la dinámica del conflicto se hizo más fuerte?;bdi_only;4
+Gemini3Flash;34;tercero;¿Qué tipo de situaciones empezó a notar cuando la dinámica del conflicto se hizo más fuerte?;bdi_rag;9
+Gemini3Flash;35;tercero;¿Sintió en algún momento que sabía más de lo que podía decir o hacer?;baseline;6
+Gemini3Flash;35;tercero;¿Sintió en algún momento que sabía más de lo que podía decir o hacer?;rag_only;9
+Gemini3Flash;35;tercero;¿Sintió en algún momento que sabía más de lo que podía decir o hacer?;bdi_only;7
+Gemini3Flash;35;tercero;¿Sintió en algún momento que sabía más de lo que podía decir o hacer?;bdi_rag;5
+Gemini3Flash;36;victima;¿Sintió que quedaron desprotegidos o abandonados por el Estado en ese momento?;baseline;4
+Gemini3Flash;36;victima;¿Sintió que quedaron desprotegidos o abandonados por el Estado en ese momento?;rag_only;9
+Gemini3Flash;36;victima;¿Sintió que quedaron desprotegidos o abandonados por el Estado en ese momento?;bdi_only;5
+Gemini3Flash;36;victima;¿Sintió que quedaron desprotegidos o abandonados por el Estado en ese momento?;bdi_rag;7
+Gemini3Flash;37;tercero;¿Su seguridad se vio comprometida por lo que sabía o por lo que veía en la zona?;baseline;4
+Gemini3Flash;37;tercero;¿Su seguridad se vio comprometida por lo que sabía o por lo que veía en la zona?;rag_only;9
+Gemini3Flash;37;tercero;¿Su seguridad se vio comprometida por lo que sabía o por lo que veía en la zona?;bdi_only;6
+Gemini3Flash;37;tercero;¿Su seguridad se vio comprometida por lo que sabía o por lo que veía en la zona?;bdi_rag;8
+Gemini3Flash;38;victima;¿Usted cree que algo en la comunidad pudo haber influido en que llegara la violencia?;baseline;3
+Gemini3Flash;38;victima;¿Usted cree que algo en la comunidad pudo haber influido en que llegara la violencia?;rag_only;7
+Gemini3Flash;38;victima;¿Usted cree que algo en la comunidad pudo haber influido en que llegara la violencia?;bdi_only;5
+Gemini3Flash;38;victima;¿Usted cree que algo en la comunidad pudo haber influido en que llegara la violencia?;bdi_rag;9
+Gemini3Flash;39;victimario;¿Usted sentía que tenía opción de no cumplir una orden del mando?;baseline;4
+Gemini3Flash;39;victimario;¿Usted sentía que tenía opción de no cumplir una orden del mando?;rag_only;8
+Gemini3Flash;39;victimario;¿Usted sentía que tenía opción de no cumplir una orden del mando?;bdi_only;3
+Gemini3Flash;39;victimario;¿Usted sentía que tenía opción de no cumplir una orden del mando?;bdi_rag;6
+Qwen36Plus;1;tercero;Algunos dicen que quienes estaban ahí terminaron normalizando lo que pasaba. ¿Usted cómo lo vivió?;baseline;6
+Qwen36Plus;1;tercero;Algunos dicen que quienes estaban ahí terminaron normalizando lo que pasaba. ¿Usted cómo lo vivió?;rag_only;9
+Qwen36Plus;1;tercero;Algunos dicen que quienes estaban ahí terminaron normalizando lo que pasaba. ¿Usted cómo lo vivió?;bdi_only;4
+Qwen36Plus;1;tercero;Algunos dicen que quienes estaban ahí terminaron normalizando lo que pasaba. ¿Usted cómo lo vivió?;bdi_rag;7
+Qwen36Plus;2;victima;Cuénteme qué pasó el día que se agravó la situación y tuvieron que salir.;baseline;4
+Qwen36Plus;2;victima;Cuénteme qué pasó el día que se agravó la situación y tuvieron que salir.;rag_only;7
+Qwen36Plus;2;victima;Cuénteme qué pasó el día que se agravó la situación y tuvieron que salir.;bdi_only;5
+Qwen36Plus;2;victima;Cuénteme qué pasó el día que se agravó la situación y tuvieron que salir.;bdi_rag;9
+Qwen36Plus;3;victimario;Cuénteme sobre una operación en la que participó y que hoy reconoce que afectó a la comunidad.;baseline;5
+Qwen36Plus;3;victimario;Cuénteme sobre una operación en la que participó y que hoy reconoce que afectó a la comunidad.;rag_only;8
+Qwen36Plus;3;victimario;Cuénteme sobre una operación en la que participó y que hoy reconoce que afectó a la comunidad.;bdi_only;3
+Qwen36Plus;3;victimario;Cuénteme sobre una operación en la que participó y que hoy reconoce que afectó a la comunidad.;bdi_rag;7
+Qwen36Plus;4;victima;Después de todo lo que pasó, ¿qué significa para usted que haya verdad o justicia?;baseline;3
+Qwen36Plus;4;victima;Después de todo lo que pasó, ¿qué significa para usted que haya verdad o justicia?;rag_only;6
+Qwen36Plus;4;victima;Después de todo lo que pasó, ¿qué significa para usted que haya verdad o justicia?;bdi_only;2
+Qwen36Plus;4;victima;Después de todo lo que pasó, ¿qué significa para usted que haya verdad o justicia?;bdi_rag;7
+Qwen36Plus;5;victimario;Muchas víctimas dicen que excombatientes minimizan lo que hicieron. ¿Está contando todo como fue?;baseline;5
+Qwen36Plus;5;victimario;Muchas víctimas dicen que excombatientes minimizan lo que hicieron. ¿Está contando todo como fue?;rag_only;9
+Qwen36Plus;5;victimario;Muchas víctimas dicen que excombatientes minimizan lo que hicieron. ¿Está contando todo como fue?;bdi_only;3
+Qwen36Plus;5;victimario;Muchas víctimas dicen que excombatientes minimizan lo que hicieron. ¿Está contando todo como fue?;bdi_rag;7
+Qwen36Plus;6;tercero;¿Cree que pudo haber hecho algo más frente a lo que estaba ocurriendo en la comunidad?;baseline;4
+Qwen36Plus;6;tercero;¿Cree que pudo haber hecho algo más frente a lo que estaba ocurriendo en la comunidad?;rag_only;6
+Qwen36Plus;6;tercero;¿Cree que pudo haber hecho algo más frente a lo que estaba ocurriendo en la comunidad?;bdi_only;3
+Qwen36Plus;6;tercero;¿Cree que pudo haber hecho algo más frente a lo que estaba ocurriendo en la comunidad?;bdi_rag;9
+Qwen36Plus;7;tercero;¿Cuál era su rol en la región y desde cuándo estaba en esa zona de orden público?;baseline;4
+Qwen36Plus;7;tercero;¿Cuál era su rol en la región y desde cuándo estaba en esa zona de orden público?;rag_only;7
+Qwen36Plus;7;tercero;¿Cuál era su rol en la región y desde cuándo estaba en esa zona de orden público?;bdi_only;5
+Qwen36Plus;7;tercero;¿Cuál era su rol en la región y desde cuándo estaba en esa zona de orden público?;bdi_rag;9
+Qwen36Plus;8;victimario;¿Cuántos años tenía cuando se vinculó a la organización y cómo fue ese proceso?;baseline;4
+Qwen36Plus;8;victimario;¿Cuántos años tenía cuando se vinculó a la organización y cómo fue ese proceso?;rag_only;6
+Qwen36Plus;8;victimario;¿Cuántos años tenía cuando se vinculó a la organización y cómo fue ese proceso?;bdi_only;3
+Qwen36Plus;8;victimario;¿Cuántos años tenía cuando se vinculó a la organización y cómo fue ese proceso?;bdi_rag;8
+Qwen36Plus;9;victima;¿Cómo cambió su vida y la de su familia después de eso?;baseline;7
+Qwen36Plus;9;victima;¿Cómo cambió su vida y la de su familia después de eso?;rag_only;6
+Qwen36Plus;9;victima;¿Cómo cambió su vida y la de su familia después de eso?;bdi_only;4
+Qwen36Plus;9;victima;¿Cómo cambió su vida y la de su familia después de eso?;bdi_rag;9
+Qwen36Plus;10;victimario;¿Cómo era la vida dentro de la organización y qué tipo de órdenes recibía?;baseline;4
+Qwen36Plus;10;victimario;¿Cómo era la vida dentro de la organización y qué tipo de órdenes recibía?;rag_only;7
+Qwen36Plus;10;victimario;¿Cómo era la vida dentro de la organización y qué tipo de órdenes recibía?;bdi_only;5
+Qwen36Plus;10;victimario;¿Cómo era la vida dentro de la organización y qué tipo de órdenes recibía?;bdi_rag;8
+Qwen36Plus;11;victima;¿Cómo era la vida en la vereda antes de que llegaran esos grupos armados?;baseline;4
+Qwen36Plus;11;victima;¿Cómo era la vida en la vereda antes de que llegaran esos grupos armados?;rag_only;3
+Qwen36Plus;11;victima;¿Cómo era la vida en la vereda antes de que llegaran esos grupos armados?;bdi_only;7
+Qwen36Plus;11;victima;¿Cómo era la vida en la vereda antes de que llegaran esos grupos armados?;bdi_rag;9
+Qwen36Plus;12;tercero;¿Cómo era la vida en la vereda o el casco urbano antes de que aumentara la presencia de grupos armados?;baseline;5
+Qwen36Plus;12;tercero;¿Cómo era la vida en la vereda o el casco urbano antes de que aumentara la presencia de grupos armados?;rag_only;6
+Qwen36Plus;12;tercero;¿Cómo era la vida en la vereda o el casco urbano antes de que aumentara la presencia de grupos armados?;bdi_only;3
+Qwen36Plus;12;tercero;¿Cómo era la vida en la vereda o el casco urbano antes de que aumentara la presencia de grupos armados?;bdi_rag;8
+Qwen36Plus;13;victima;¿Cómo fue ese proceso de desplazamiento hasta llegar a otro lugar?;baseline;4
+Qwen36Plus;13;victima;¿Cómo fue ese proceso de desplazamiento hasta llegar a otro lugar?;rag_only;6
+Qwen36Plus;13;victima;¿Cómo fue ese proceso de desplazamiento hasta llegar a otro lugar?;bdi_only;7
+Qwen36Plus;13;victima;¿Cómo fue ese proceso de desplazamiento hasta llegar a otro lugar?;bdi_rag;9
+Qwen36Plus;14;victimario;¿Cómo ha sido el proceso de reintegrarse a la vida civil después de salir de esa estructura?;baseline;4
+Qwen36Plus;14;victimario;¿Cómo ha sido el proceso de reintegrarse a la vida civil después de salir de esa estructura?;rag_only;9
+Qwen36Plus;14;victimario;¿Cómo ha sido el proceso de reintegrarse a la vida civil después de salir de esa estructura?;bdi_only;3
+Qwen36Plus;14;victimario;¿Cómo ha sido el proceso de reintegrarse a la vida civil después de salir de esa estructura?;bdi_rag;7
+Qwen36Plus;15;victimario;¿Cómo justificaban dentro del grupo esas acciones frente a la población civil?;baseline;3
+Qwen36Plus;15;victimario;¿Cómo justificaban dentro del grupo esas acciones frente a la población civil?;rag_only;7
+Qwen36Plus;15;victimario;¿Cómo justificaban dentro del grupo esas acciones frente a la población civil?;bdi_only;4
+Qwen36Plus;15;victimario;¿Cómo justificaban dentro del grupo esas acciones frente a la población civil?;bdi_rag;9
+Qwen36Plus;16;victima;¿Cómo responde a quienes dicen que en esas zonas había colaboración con los grupos?;baseline;2
+Qwen36Plus;16;victima;¿Cómo responde a quienes dicen que en esas zonas había colaboración con los grupos?;rag_only;9
+Qwen36Plus;16;victima;¿Cómo responde a quienes dicen que en esas zonas había colaboración con los grupos?;bdi_only;4
+Qwen36Plus;16;victima;¿Cómo responde a quienes dicen que en esas zonas había colaboración con los grupos?;bdi_rag;7
+Qwen36Plus;17;tercero;¿Cómo se relacionaban los civiles con esos grupos para poder mantenerse en el territorio?;baseline;3
+Qwen36Plus;17;tercero;¿Cómo se relacionaban los civiles con esos grupos para poder mantenerse en el territorio?;rag_only;7
+Qwen36Plus;17;tercero;¿Cómo se relacionaban los civiles con esos grupos para poder mantenerse en el territorio?;bdi_only;4
+Qwen36Plus;17;tercero;¿Cómo se relacionaban los civiles con esos grupos para poder mantenerse en el territorio?;bdi_rag;9
+Qwen36Plus;18;victima;¿De qué vereda o municipio lo sacaron y que grupo tenhia la presencia armada en esa zona?;baseline;2
+Qwen36Plus;18;victima;¿De qué vereda o municipio lo sacaron y que grupo tenhia la presencia armada en esa zona?;rag_only;6
+Qwen36Plus;18;victima;¿De qué vereda o municipio lo sacaron y que grupo tenhia la presencia armada en esa zona?;bdi_only;3
+Qwen36Plus;18;victima;¿De qué vereda o municipio lo sacaron y que grupo tenhia la presencia armada en esa zona?;bdi_rag;8
+Qwen36Plus;19;victima;¿Fue por amenaza directa, operativo o algo que pasó en la comunidad?;baseline;4
+Qwen36Plus;19;victima;¿Fue por amenaza directa, operativo o algo que pasó en la comunidad?;rag_only;7
+Qwen36Plus;19;victima;¿Fue por amenaza directa, operativo o algo que pasó en la comunidad?;bdi_only;3
+Qwen36Plus;19;victima;¿Fue por amenaza directa, operativo o algo que pasó en la comunidad?;bdi_rag;9
+Qwen36Plus;20;tercero;¿Le tocó ver directamente desplazamientos, reclutamientos u otras acciones contra la comunidad?;baseline;3
+Qwen36Plus;20;tercero;¿Le tocó ver directamente desplazamientos, reclutamientos u otras acciones contra la comunidad?;rag_only;4
+Qwen36Plus;20;tercero;¿Le tocó ver directamente desplazamientos, reclutamientos u otras acciones contra la comunidad?;bdi_only;6
+Qwen36Plus;20;tercero;¿Le tocó ver directamente desplazamientos, reclutamientos u otras acciones contra la comunidad?;bdi_rag;8
+Qwen36Plus;21;victimario;¿No cree que, más allá de las órdenes, usted tiene responsabilidad directa en lo que pasó?;baseline;4
+Qwen36Plus;21;victimario;¿No cree que, más allá de las órdenes, usted tiene responsabilidad directa en lo que pasó?;rag_only;7
+Qwen36Plus;21;victimario;¿No cree que, más allá de las órdenes, usted tiene responsabilidad directa en lo que pasó?;bdi_only;3
+Qwen36Plus;21;victimario;¿No cree que, más allá de las órdenes, usted tiene responsabilidad directa en lo que pasó?;bdi_rag;6
+Qwen36Plus;22;victima;¿Por qué no se fueron antes si ya había presencia de grupos armados?;baseline;5
+Qwen36Plus;22;victima;¿Por qué no se fueron antes si ya había presencia de grupos armados?;rag_only;9
+Qwen36Plus;22;victima;¿Por qué no se fueron antes si ya había presencia de grupos armados?;bdi_only;3
+Qwen36Plus;22;victima;¿Por qué no se fueron antes si ya había presencia de grupos armados?;bdi_rag;7
+Qwen36Plus;23;victimario;¿Por qué razón decidió unirse? ¿Fue reclutamiento forzado o decisión propia?;baseline;3
+Qwen36Plus;23;victimario;¿Por qué razón decidió unirse? ¿Fue reclutamiento forzado o decisión propia?;rag_only;6
+Qwen36Plus;23;victimario;¿Por qué razón decidió unirse? ¿Fue reclutamiento forzado o decisión propia?;bdi_only;4
+Qwen36Plus;23;victimario;¿Por qué razón decidió unirse? ¿Fue reclutamiento forzado o decisión propia?;bdi_rag;8
+Qwen36Plus;24;tercero;¿Qué actores armados tenían presencia en el territorio y cómo se percibía su control?;baseline;4
+Qwen36Plus;24;tercero;¿Qué actores armados tenían presencia en el territorio y cómo se percibía su control?;rag_only;7
+Qwen36Plus;24;tercero;¿Qué actores armados tenían presencia en el territorio y cómo se percibía su control?;bdi_only;3
+Qwen36Plus;24;tercero;¿Qué actores armados tenían presencia en el territorio y cómo se percibía su control?;bdi_rag;9
+Qwen36Plus;25;victima;¿Qué cosas de la vereda o de su vida anterior siente que no pudo recuperar?;baseline;4
+Qwen36Plus;25;victima;¿Qué cosas de la vereda o de su vida anterior siente que no pudo recuperar?;rag_only;9
+Qwen36Plus;25;victima;¿Qué cosas de la vereda o de su vida anterior siente que no pudo recuperar?;bdi_only;6
+Qwen36Plus;25;victima;¿Qué cosas de la vereda o de su vida anterior siente que no pudo recuperar?;bdi_rag;8
+Qwen36Plus;26;tercero;¿Qué cree que debería saberse o reconocerse sobre lo que usted vio y no siempre se cuenta?;baseline;4
+Qwen36Plus;26;tercero;¿Qué cree que debería saberse o reconocerse sobre lo que usted vio y no siempre se cuenta?;rag_only;6
+Qwen36Plus;26;tercero;¿Qué cree que debería saberse o reconocerse sobre lo que usted vio y no siempre se cuenta?;bdi_only;3
+Qwen36Plus;26;tercero;¿Qué cree que debería saberse o reconocerse sobre lo que usted vio y no siempre se cuenta?;bdi_rag;8
+Qwen36Plus;27;tercero;¿Qué fue lo más difícil de estar en medio de esa situación sin ser parte directa?;baseline;3
+Qwen36Plus;27;tercero;¿Qué fue lo más difícil de estar en medio de esa situación sin ser parte directa?;rag_only;8
+Qwen36Plus;27;tercero;¿Qué fue lo más difícil de estar en medio de esa situación sin ser parte directa?;bdi_only;4
+Qwen36Plus;27;tercero;¿Qué fue lo más difícil de estar en medio de esa situación sin ser parte directa?;bdi_rag;7
+Qwen36Plus;28;victima;¿Qué fue lo más duro de tener que dejar el territorio así?;baseline;4
+Qwen36Plus;28;victima;¿Qué fue lo más duro de tener que dejar el territorio así?;rag_only;9
+Qwen36Plus;28;victima;¿Qué fue lo más duro de tener que dejar el territorio así?;bdi_only;2
+Qwen36Plus;28;victima;¿Qué fue lo más duro de tener que dejar el territorio así?;bdi_rag;7
+Qwen36Plus;29;victimario;¿Qué lo llevó a tomar la decisión de desmovilizarse o dejar la organización?;baseline;3
+Qwen36Plus;29;victimario;¿Qué lo llevó a tomar la decisión de desmovilizarse o dejar la organización?;rag_only;6
+Qwen36Plus;29;victimario;¿Qué lo llevó a tomar la decisión de desmovilizarse o dejar la organización?;bdi_only;4
+Qwen36Plus;29;victimario;¿Qué lo llevó a tomar la decisión de desmovilizarse o dejar la organización?;bdi_rag;7
+Qwen36Plus;30;victimario;¿Qué papel cumplía dentro de la estructura: miliciano, combatiente o parte del mando?;baseline;4
+Qwen36Plus;30;victimario;¿Qué papel cumplía dentro de la estructura: miliciano, combatiente o parte del mando?;rag_only;7
+Qwen36Plus;30;victimario;¿Qué papel cumplía dentro de la estructura: miliciano, combatiente o parte del mando?;bdi_only;3
+Qwen36Plus;30;victimario;¿Qué papel cumplía dentro de la estructura: miliciano, combatiente o parte del mando?;bdi_rag;6
+Qwen36Plus;31;victimario;¿Qué piensa hoy sobre las personas que fueron desplazadas o afectadas por esas decisiones?;baseline;3
+Qwen36Plus;31;victimario;¿Qué piensa hoy sobre las personas que fueron desplazadas o afectadas por esas decisiones?;rag_only;8
+Qwen36Plus;31;victimario;¿Qué piensa hoy sobre las personas que fueron desplazadas o afectadas por esas decisiones?;bdi_only;4
+Qwen36Plus;31;victimario;¿Qué piensa hoy sobre las personas que fueron desplazadas o afectadas por esas decisiones?;bdi_rag;6
+Qwen36Plus;32;victimario;¿Qué significa hoy para usted asumir responsabilidad o pedir perdón por lo que ocurrió?;baseline;3
+Qwen36Plus;32;victimario;¿Qué significa hoy para usted asumir responsabilidad o pedir perdón por lo que ocurrió?;rag_only;8
+Qwen36Plus;32;victimario;¿Qué significa hoy para usted asumir responsabilidad o pedir perdón por lo que ocurrió?;bdi_only;2
+Qwen36Plus;32;victimario;¿Qué significa hoy para usted asumir responsabilidad o pedir perdón por lo que ocurrió?;bdi_rag;5
+Qwen36Plus;33;tercero;¿Qué significa para usted hablar ahora de lo que pasó en ese tiempo?;baseline;2
+Qwen36Plus;33;tercero;¿Qué significa para usted hablar ahora de lo que pasó en ese tiempo?;rag_only;8
+Qwen36Plus;33;tercero;¿Qué significa para usted hablar ahora de lo que pasó en ese tiempo?;bdi_only;3
+Qwen36Plus;33;tercero;¿Qué significa para usted hablar ahora de lo que pasó en ese tiempo?;bdi_rag;6
+Qwen36Plus;34;tercero;¿Qué tipo de situaciones empezó a notar cuando la dinámica del conflicto se hizo más fuerte?;baseline;1
+Qwen36Plus;34;tercero;¿Qué tipo de situaciones empezó a notar cuando la dinámica del conflicto se hizo más fuerte?;rag_only;6
+Qwen36Plus;34;tercero;¿Qué tipo de situaciones empezó a notar cuando la dinámica del conflicto se hizo más fuerte?;bdi_only;2
+Qwen36Plus;34;tercero;¿Qué tipo de situaciones empezó a notar cuando la dinámica del conflicto se hizo más fuerte?;bdi_rag;8
+Qwen36Plus;35;tercero;¿Sintió en algún momento que sabía más de lo que podía decir o hacer?;baseline;6
+Qwen36Plus;35;tercero;¿Sintió en algún momento que sabía más de lo que podía decir o hacer?;rag_only;9
+Qwen36Plus;35;tercero;¿Sintió en algún momento que sabía más de lo que podía decir o hacer?;bdi_only;3
+Qwen36Plus;35;tercero;¿Sintió en algún momento que sabía más de lo que podía decir o hacer?;bdi_rag;4
+Qwen36Plus;36;victima;¿Sintió que quedaron desprotegidos o abandonados por el Estado en ese momento?;baseline;3
+Qwen36Plus;36;victima;¿Sintió que quedaron desprotegidos o abandonados por el Estado en ese momento?;rag_only;9
+Qwen36Plus;36;victima;¿Sintió que quedaron desprotegidos o abandonados por el Estado en ese momento?;bdi_only;4
+Qwen36Plus;36;victima;¿Sintió que quedaron desprotegidos o abandonados por el Estado en ese momento?;bdi_rag;6
+Qwen36Plus;37;tercero;¿Su seguridad se vio comprometida por lo que sabía o por lo que veía en la zona?;baseline;3
+Qwen36Plus;37;tercero;¿Su seguridad se vio comprometida por lo que sabía o por lo que veía en la zona?;rag_only;9
+Qwen36Plus;37;tercero;¿Su seguridad se vio comprometida por lo que sabía o por lo que veía en la zona?;bdi_only;4
+Qwen36Plus;37;tercero;¿Su seguridad se vio comprometida por lo que sabía o por lo que veía en la zona?;bdi_rag;7
+Qwen36Plus;38;victima;¿Usted cree que algo en la comunidad pudo haber influido en que llegara la violencia?;baseline;2
+Qwen36Plus;38;victima;¿Usted cree que algo en la comunidad pudo haber influido en que llegara la violencia?;rag_only;6
+Qwen36Plus;38;victima;¿Usted cree que algo en la comunidad pudo haber influido en que llegara la violencia?;bdi_only;3
+Qwen36Plus;38;victima;¿Usted cree que algo en la comunidad pudo haber influido en que llegara la violencia?;bdi_rag;9
+Qwen36Plus;39;victimario;¿Usted sentía que tenía opción de no cumplir una orden del mando?;baseline;4
+Qwen36Plus;39;victimario;¿Usted sentía que tenía opción de no cumplir una orden del mando?;rag_only;9
+Qwen36Plus;39;victimario;¿Usted sentía que tenía opción de no cumplir una orden del mando?;bdi_only;5
+Qwen36Plus;39;victimario;¿Usted sentía que tenía opción de no cumplir una orden del mando?;bdi_rag;7

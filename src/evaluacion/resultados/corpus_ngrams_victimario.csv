@@ -1,0 +1,221 @@
+ngrama,frecuencia,tfidf,specificity_score,ngram_size,rol
+guerrilla,2372,0.026516,0.31093,1,victimario
+ejercito,1731,0.02402,0.28119,1,victimario
+organizacion,1730,0.02151,0.268343,1,victimario
+gente,4684,0.030833,0.22006,1,victimario
+comandante,1193,0.020675,0.207539,1,victimario
+zona,1091,0.021624,0.185059,1,victimario
+frente,1598,0.022304,0.184288,1,victimario
+epoca,811,0.018691,0.229581,1,victimario
+politica,792,0.018444,0.214023,1,victimario
+guerra,1111,0.018947,0.153072,1,victimario
+plata,1017,0.01891,0.171038,1,victimario
+familia,971,0.021762,0.173804,1,victimario
+momento,1339,0.023275,0.176268,1,victimario
+proceso,1152,0.020578,0.174263,1,victimario
+militar,951,0.019556,0.176881,1,victimario
+farc,821,0.017741,0.200292,1,victimario
+paramilitares,719,0.017606,0.215292,1,victimario
+mataron,661,0.017584,0.191721,1,victimario
+policia,696,0.017343,0.19622,1,victimario
+armas,611,0.017292,0.157152,1,victimario
+poblacion,529,0.016327,0.194054,1,victimario
+militares,474,0.016266,0.154846,1,victimario
+conflicto,470,0.016193,0.159639,1,victimario
+paz,684,0.017076,0.146137,1,victimario
+gobierno,538,0.017037,0.126277,1,victimario
+civil,541,0.016672,0.149181,1,victimario
+mujeres,542,0.016865,0.135875,1,victimario
+pueblo,708,0.018649,0.149783,1,victimario
+grupos,497,0.017689,0.155056,1,victimario
+grupo,1138,0.021181,0.166752,1,victimario
+mando,511,0.016176,0.15471,1,victimario
+violencia,396,0.015664,0.187619,1,victimario
+armado,448,0.015541,0.169989,1,victimario
+tierras,326,0.015216,0.170748,1,victimario
+pueblo,708,0.018649,0.149783,1,victimario
+combate,375,0.014876,0.227082,1,victimario
+ataque,309,0.01482,0.185387,1,victimario
+batallones,285,0.014516,0.305064,1,victimario
+arma,382,0.014285,0.162989,1,victimario
+desplazamiento,266,0.013944,0.220127,1,victimario
+secuestro,282,0.013943,0.182293,1,victimario
+reclutamiento,280,0.013921,0.321124,1,victimario
+masacre,360,0.013799,0.191098,1,victimario
+combates,288,0.013768,0.264862,1,victimario
+operacion,330,0.01375,0.159172,1,victimario
+hostigamiento,214,0.013673,0.289301,1,victimario
+campesinos,277,0.013573,0.203088,1,victimario
+toma,344,0.01353,0.168106,1,victimario
+fuerzas,391,0.01351,0.138993,1,victimario
+comunidad,299,0.013434,0.16134,1,victimario
+patrulla,250,0.013381,0.176619,1,victimario
+enemigo,274,0.013366,0.175434,1,victimario
+minas,235,0.013344,0.215476,1,victimario
+uniforme,222,0.01328,0.174933,1,victimario
+operaciones,255,0.013271,0.177002,1,victimario
+emboscada,216,0.01322,0.224476,1,victimario
+desmovilizacion,232,0.013113,0.210125,1,victimario
+armada,229,0.013041,0.172844,1,victimario
+comandantes,213,0.012968,0.208991,1,victimario
+base,289,0.012955,0.138661,1,victimario
+reclutado,211,0.01295,0.249838,1,victimario
+victimas,226,0.012924,0.182992,1,victimario
+autodefensas,255,0.012856,0.191421,1,victimario
+asesinaron,247,0.012823,0.194889,1,victimario
+paramilitar,206,0.012737,0.200925,1,victimario
+desplazados,182,0.012707,0.213652,1,victimario
+confrontacion,183,0.012632,0.218803,1,victimario
+fusil,255,0.012614,0.139958,1,victimario
+batallon,251,0.012593,0.160033,1,victimario
+camuflado,176,0.012557,0.189871,1,victimario
+unidad,225,0.012482,0.149866,1,victimario
+reinsersion,151,0.012433,0.292333,1,victimario
+frentes,191,0.012409,0.179329,1,victimario
+excombatientes,148,0.012398,0.293033,1,victimario
+insurgente,152,0.012364,0.240353,1,victimario
+fuerza,215,0.012355,0.133733,1,victimario
+eln,242,0.012338,0.188471,1,victimario
+milicias,175,0.012335,0.23434,1,victimario
+enfrentamiento,176,0.012322,0.226866,1,victimario
+municion,168,0.012248,0.215952,1,victimario
+bloque,259,0.012247,0.154994,1,victimario
+victimarios,161,0.012243,0.251896,1,victimario
+camuflados,155,0.012153,0.207639,1,victimario
+region,203,0.012134,0.156075,1,victimario
+tropa,178,0.012044,0.159829,1,victimario
+batallar,148,0.012042,0.197116,1,victimario
+guerrilleros,201,0.011979,0.175387,1,victimario
+ejercitos,134,0.011968,0.21664,1,victimario
+contraguerrilla,134,0.011954,0.279088,1,victimario
+desertores,134,0.011929,0.280169,1,victimario
+rasos,136,0.011898,0.203867,1,victimario
+subversivo,129,0.011846,0.204952,1,victimario
+informante,146,0.011838,0.184653,1,victimario
+narcotraficantes,130,0.011829,0.218099,1,victimario
+desertar,123,0.011811,0.232029,1,victimario
+campamento,184,0.011808,0.167349,1,victimario
+entrenamiento,156,0.011749,0.162754,1,victimario
+guerrillera,174,0.011745,0.191133,1,victimario
+combatiente,140,0.011688,0.199991,1,victimario
+cuadrilla,144,0.011684,0.192327,1,victimario
+compania,156,0.011656,0.152693,1,victimario
+tropa,178,0.012044,0.159829,1,victimario
+brigada,171,0.011655,0.166742,1,victimario
+compas,122,0.011602,0.202254,1,victimario
+guerrillero,180,0.01159,0.169959,1,victimario
+territorios,123,0.011511,0.170743,1,victimario
+insurgentes,115,0.011482,0.21765,1,victimario
+incursion,119,0.011481,0.199804,1,victimario
+armados,167,0.011458,0.169882,1,victimario
+cilindro,116,0.011444,0.196733,1,victimario
+retenes,117,0.011437,0.224598,1,victimario
+clandestinidad,108,0.011376,0.245622,1,victimario
+reten,149,0.011365,0.18086,1,victimario
+filas,136,0.011358,0.180699,1,victimario
+combatientes,121,0.011282,0.19669,1,victimario
+escuadra,124,0.011279,0.189698,1,victimario
+revolucion,132,0.011244,0.168359,1,victimario
+reclutamiento forzado,69,0.010683,0.010683,2,victimario
+conflicto armado,143,0.010605,0.010605,2,victimario
+grupos armados,92,0.010368,0.010368,2,victimario
+fuerzas militares,102,0.010281,0.010281,2,victimario
+poblacion civil,93,0.010245,0.010245,2,victimario
+proceso paz,77,0.010184,0.010184,2,victimario
+ejercito nacional,77,0.010088,0.010088,2,victimario
+derechos humanos,64,0.009882,0.009882,2,victimario
+grupo armado,78,0.009816,0.009816,2,victimario
+combates ejercito,35,0.00954,0.00954,2,victimario
+fuerzas armadas,46,0.009509,0.009509,2,victimario
+servicio militar,57,0.009459,0.009459,2,victimario
+frente guerra,49,0.009387,0.009387,2,victimario
+zona roja,37,0.009266,0.009266,2,victimario
+guerra guerrilla,32,0.009245,0.009245,2,victimario
+bloque central,36,0.009206,0.009206,2,victimario
+comandante frente,54,0.009196,0.009196,2,victimario
+armas fusiles,28,0.009165,0.009165,2,victimario
+masacre poblacion,31,0.00906,0.00906,2,victimario
+grupos paramilitares,34,0.009057,0.009057,2,victimario
+combate guerrilla,35,0.009021,0.009021,2,victimario
+patrulla militar,29,0.008967,0.008967,2,victimario
+victimas conflicto,34,0.008939,0.008939,2,victimario
+minas antipersonal,30,0.008921,0.008921,2,victimario
+fuerza publica,39,0.00885,0.00885,2,victimario
+toma pueblo,32,0.008823,0.008823,2,victimario
+operacion militar,36,0.008784,0.008784,2,victimario
+secuestro extorsion,22,0.008774,0.008774,2,victimario
+enfrentamiento ejercito,29,0.008699,0.008699,2,victimario
+zona conflicto,22,0.008661,0.008661,2,victimario
+base militar,36,0.008651,0.008651,2,victimario
+desmovilizacion colectiva,20,0.00861,0.00861,2,victimario
+uniforme camuflado,24,0.008609,0.008609,2,victimario
+campamento guerrillero,25,0.008555,0.008555,2,victimario
+hostigamiento ejercito,19,0.008527,0.008527,2,victimario
+autodefensas unidas,27,0.008502,0.008502,2,victimario
+emboscada patrulla,19,0.008477,0.008477,2,victimario
+frentes militares,22,0.008459,0.008459,2,victimario
+guerrilla farc,43,0.008425,0.008425,2,victimario
+acuerdo paz,28,0.008411,0.008411,2,victimario
+operaciones militares,25,0.008362,0.008362,2,victimario
+unidad militar,24,0.008306,0.008306,2,victimario
+desplazamiento forzado,24,0.008288,0.008288,2,victimario
+estructura armada,22,0.008286,0.008286,2,victimario
+batallones contraguerrilla,16,0.008276,0.008276,2,victimario
+narcotraficantes paramilitares,15,0.008234,0.008234,2,victimario
+revolucion armada,18,0.008203,0.008203,2,victimario
+cilindros bomba,15,0.008167,0.008167,2,victimario
+milicias urbanas,17,0.008145,0.008145,2,victimario
+tropa combate,17,0.008127,0.008127,2,victimario
+combatientes guerrilla,20,0.008119,0.008119,2,victimario
+reclutados forzosamente,13,0.008099,0.008099,2,victimario
+armada revolucionaria,15,0.008077,0.008077,2,victimario
+retenes ilegales,14,0.008051,0.008051,2,victimario
+orden publico,21,0.008041,0.008041,2,victimario
+grupos insurgentes,16,0.008022,0.008022,2,victimario
+confrontacion armada,18,0.008014,0.008014,2,victimario
+territorio controlado,14,0.007992,0.007992,2,victimario
+frente bloque,26,0.00797,0.00797,2,victimario
+compania batallon,15,0.007963,0.007963,2,victimario
+desertar guerrilla,12,0.007957,0.007957,2,victimario
+entrenamiento militar,16,0.007942,0.007942,2,victimario
+incursion armada,12,0.007934,0.007934,2,victimario
+escuadra combate,13,0.007931,0.007931,2,victimario
+insurgencia armada,12,0.007904,0.007904,2,victimario
+bloque frente,24,0.007869,0.007869,2,victimario
+filas guerrilla,17,0.007868,0.007868,2,victimario
+fuerzas militares ejercito,16,0.007806,0.007806,3,victimario
+grupos armados ilegales,17,0.007757,0.007757,3,victimario
+conflicto armado interno,15,0.007747,0.007747,3,victimario
+combates guerrilla ejercito,13,0.007728,0.007728,3,victimario
+reclutamiento forzado menores,10,0.007682,0.007682,3,victimario
+proceso paz farc,11,0.007673,0.007673,3,victimario
+victimas conflicto armado,14,0.007669,0.007669,3,victimario
+masacre poblacion civil,12,0.007645,0.007645,3,victimario
+operaciones militares ejercito,11,0.007628,0.007628,3,victimario
+desplazamiento forzado poblacion,9,0.007581,0.007581,3,victimario
+guerrilla farc eln,13,0.007575,0.007575,3,victimario
+autodefensas unidas colombia,13,0.007569,0.007569,3,victimario
+grupos paramilitares auc,10,0.007556,0.007556,3,victimario
+minas antipersonal cilindros,8,0.007549,0.007549,3,victimario
+comandante frente bloque,13,0.007533,0.007533,3,victimario
+toma armada pueblo,10,0.007521,0.007521,3,victimario
+estructura militar guerrilla,9,0.007482,0.007482,3,victimario
+combatientes filas guerrilla,9,0.007464,0.007464,3,victimario
+batallones contraguerrilla ejercito,8,0.007449,0.007449,3,victimario
+desmovilizacion proceso paz,9,0.007434,0.007434,3,victimario
+confrontacion armada ejercito,9,0.007417,0.007417,3,victimario
+campamento guerrillero zona,8,0.007401,0.007401,3,victimario
+hostigamiento emboscada ejercito,7,0.00739,0.00739,3,victimario
+retenes ilegales armados,7,0.007372,0.007372,3,victimario
+entrenamiento militar combate,8,0.007356,0.007356,3,victimario
+orden publico zona,9,0.007339,0.007339,3,victimario
+bloque frente guerra,11,0.007333,0.007333,3,victimario
+incursion guerrilla pueblo,7,0.007321,0.007321,3,victimario
+brigada batallon militar,8,0.007308,0.007308,3,victimario
+revolucion armada popular,7,0.007295,0.007295,3,victimario
+cilindros bomba casera,6,0.007279,0.007279,3,victimario
+desertar filas guerrilla,7,0.007262,0.007262,3,victimario
+milicias urbanas clandestinas,6,0.007246,0.007246,3,victimario
+unidad militar elite,7,0.007228,0.007228,3,victimario
+territorio zona roja,7,0.007211,0.007211,3,victimario
+escuadra guerrilla combate,6,0.007193,0.007193,3,victimario

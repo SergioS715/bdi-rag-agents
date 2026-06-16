@@ -1,0 +1,5 @@
+Condición,n,Mediana,IQR,Media,DE,Mín,Máx,W (Shapiro),p (Shapiro),Normal?
+baseline,117,4.0,1.0,4.56,1.34,1,8,0.9476,0.0002,No
+bdi_only,117,5.0,2.0,4.69,1.39,2,9,0.9439,0.0001,No
+rag_only,117,7.0,2.0,7.39,1.32,3,9,0.8972,0.0000,No
+bdi_rag,117,8.0,2.0,7.73,1.2,4,9,0.8634,0.0000,No

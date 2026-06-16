@@ -1,0 +1,220 @@
+ngrama,frecuencia,tfidf,specificity_score,ngram_size,rol
+gente,20790,0.026314,0.187807,1,victima
+usted,21401,0.026226,0.222724,1,victima
+despues,10631,0.022596,0.214587,1,victima
+guerrilla,9776,0.021224,0.248875,1,victima
+personas,8671,0.0207,0.150582,1,victima
+momento,9023,0.020447,0.154851,1,victima
+familia,7336,0.019925,0.159132,1,victima
+paso,6719,0.019763,0.16464,1,victima
+mama,7779,0.019075,0.202594,1,victima
+papa,8122,0.018775,0.18084,1,victima
+senor,7192,0.018475,0.23381,1,victima
+pueblo,6320,0.018441,0.148112,1,victima
+creo,7704,0.018408,0.136017,1,victima
+ejercito,6613,0.018314,0.214393,1,victima
+paramilitares,5465,0.017891,0.218777,1,victima
+tenian,5382,0.017868,0.208429,1,victima
+hijos,5552,0.017734,0.150606,1,victima
+trabajo,5717,0.017531,0.128733,1,victima
+verdad,5134,0.01731,0.132278,1,victima
+mataron,4665,0.017128,0.186749,1,victima
+finca,5130,0.016973,0.193791,1,victima
+hicieron,4041,0.016326,0.149112,1,victima
+comunidad,4249,0.015958,0.140615,1,victima
+hijo,4244,0.015888,0.131649,1,victima
+grupos,3569,0.015792,0.138427,1,victima
+senora,3931,0.015623,0.211886,1,victima
+colombia,5464,0.015359,0.137432,1,victima
+plata,3957,0.015346,0.138802,1,victima
+policia,3817,0.015185,0.171804,1,victima
+situacion,3674,0.01502,0.176427,1,victima
+miedo,3206,0.014997,0.129735,1,victima
+vivir,3062,0.014975,0.128875,1,victima
+zona,4077,0.014876,0.127309,1,victima
+ninos,3546,0.014858,0.195963,1,victima
+epoca,3669,0.014782,0.181567,1,victima
+gobierno,3529,0.014655,0.108622,1,victima
+vereda,2771,0.014644,0.174904,1,victima
+tema,4698,0.014546,0.120529,1,victima
+conflicto,3272,0.014386,0.141825,1,victima
+pais,4115,0.014229,0.14795,1,victima
+noche,3033,0.014202,0.112772,1,victima
+violencia,2738,0.01406,0.129082,1,victima
+victimas,2721,0.013991,0.169518,1,victima
+duro,2760,0.013941,0.134279,1,victima
+paz,2856,0.013686,0.117125,1,victima
+mujeres,2879,0.01363,0.109812,1,victima
+llevaron,2454,0.013474,0.139203,1,victima
+matar,2570,0.013459,0.129948,1,victima
+territorio,3192,0.013376,0.126116,1,victima
+mujer,2393,0.013263,0.104697,1,victima
+tierra,2641,0.013119,0.109904,1,victima
+problema,2681,0.013045,0.105098,1,victima
+hechos,2160,0.013028,0.120456,1,victima
+hija,2314,0.01297,0.117533,1,victima
+mal,2323,0.012916,0.100487,1,victima
+nino,2529,0.01272,0.160585,1,victima
+desplazamiento,1760,0.012667,0.146207,1,victima
+hermanos,1985,0.01261,0.12032,1,victima
+coca,2374,0.012592,0.135391,1,victima
+hermana,2050,0.012574,0.119699,1,victima
+salio,2077,0.012415,0.140464,1,victima
+ayuda,1712,0.012407,0.104776,1,victima
+alguien,2123,0.012394,0.093298,1,victima
+farc,2074,0.012314,0.139022,1,victima
+nina,2048,0.01228,0.146205,1,victima
+rio,2068,0.01205,0.126367,1,victima
+recuerdo,2333,0.01202,0.108924,1,victima
+vive,1724,0.011998,0.109807,1,victima
+esposo,2053,0.011962,0.123582,1,victima
+comida,1822,0.01193,0.105696,1,victima
+cualquier,1959,0.011886,0.092761,1,victima
+armado,1848,0.011846,0.12737,1,victima
+publica,1994,0.011752,0.119829,1,victima
+llegaban,1630,0.011683,0.137696,1,victima
+informacion,2028,0.011652,0.134492,1,victima
+carro,1961,0.011539,0.121778,1,victima
+pesos,1829,0.011449,0.108206,1,victima
+llegamos,1819,0.011427,0.120596,1,victima
+venian,1627,0.011412,0.147436,1,victima
+armados,1532,0.011388,0.1259,1,victima
+estudiar,1605,0.011278,0.108125,1,victima
+importante,1888,0.011261,0.091234,1,victima
+familias,1675,0.01117,0.105569,1,victima
+tierras,1816,0.011063,0.107058,1,victima
+quedaron,1335,0.010906,0.111929,1,victima
+comandante,1611,0.010903,0.109446,1,victima
+colegio,1571,0.010856,0.10013,1,victima
+escuela,1428,0.010831,0.093212,1,victima
+ningun,1555,0.010822,0.118475,1,victima
+hombre,1609,0.010816,0.085151,1,victima
+practicamente,1672,0.01081,0.136806,1,victima
+murio,1386,0.010692,0.131898,1,victima
+volvio,1297,0.010674,0.132616,1,victima
+social,1721,0.010574,0.085915,1,victima
+llevaban,1274,0.010479,0.117656,1,victima
+derechos,1831,0.01045,0.088747,1,victima
+vivido,1199,0.01044,0.109483,1,victima
+guerrilleros,1400,0.010439,0.125292,1,victima
+reunion,1497,0.010404,0.128537,1,victima
+mataban,1126,0.010398,0.13421,1,victima
+amenazas,1337,0.010388,0.112344,1,victima
+muerte,1395,0.010384,0.085326,1,victima
+campo,1314,0.010381,0.091266,1,victima
+contar,1245,0.010365,0.098433,1,victima
+temor,1152,0.010325,0.109661,1,victima
+vinieron,1147,0.010213,0.111808,1,victima
+dejaron,1235,0.010205,0.104277,1,victima
+relacion,1407,0.010186,0.11757,1,victima
+jovenes,1236,0.010163,0.120387,1,victima
+campesinos,1596,0.010142,0.111685,1,victima
+ciudad,1276,0.010136,0.077002,1,victima
+hombres,1240,0.010052,0.082377,1,victima
+comunidades,1785,0.01002,0.098555,1,victima
+victima,1052,0.010013,0.121885,1,victima
+dinero,1399,0.009916,0.080569,1,victima
+padre,1564,0.009862,0.082618,1,victima
+muertos,1149,0.009853,0.092899,1,victima
+familiar,1136,0.00981,0.095613,1,victima
+muerto,1151,0.009765,0.0914,1,victima
+partes,1078,0.00975,0.08659,1,victima
+alcalde,1377,0.009684,0.093932,1,victima
+mayoria,1119,0.009675,0.114419,1,victima
+armas,1170,0.009609,0.087328,1,victima
+oportunidad,1066,0.0096,0.085258,1,victima
+mientras,1183,0.009592,0.073522,1,victima
+cabeza,1104,0.009583,0.080707,1,victima
+podian,1017,0.00953,0.11857,1,victima
+ganado,1271,0.009513,0.092718,1,victima
+dano,1040,0.009497,0.127763,1,victima
+cultivos,1036,0.009467,0.105673,1,victima
+lideres,1148,0.00946,0.117533,1,victima
+companeros,1330,0.009443,0.129289,1,victima
+guerrillero,1152,0.009439,0.116441,1,victima
+barrio,1197,0.009365,0.089357,1,victima
+denuncia,1022,0.009315,0.094758,1,victima
+matan,1021,0.009262,0.101828,1,victima
+militar,1119,0.009189,0.083113,1,victima
+mato,896,0.009099,0.101006,1,victima
+mucha gente,1723,0.012548,0.012548,2,victima
+conflicto armado,989,0.010397,0.010397,2,victima
+grupos armados,816,0.009756,0.009756,2,victima
+muy dificil,910,0.009269,0.009269,2,victima
+muy duro,841,0.009225,0.009225,2,victima
+sus hijos,753,0.008919,0.008919,2,victima
+muy importante,641,0.007863,0.007863,2,victima
+iban matar,557,0.007589,0.007589,2,victima
+grupo armado,457,0.007425,0.007425,2,victima
+derechos humanos,844,0.007361,0.007361,2,victima
+millones pesos,571,0.00733,0.00733,2,victima
+fuerza publica,527,0.007283,0.007283,2,victima
+proceso paz,498,0.007103,0.007103,2,victima
+habian matado,423,0.006826,0.006826,2,victima
+accion comunal,484,0.006825,0.006825,2,victima
+muy grande,456,0.006751,0.006751,2,victima
+unidad victimas,390,0.006706,0.006706,2,victima
+papa mama,437,0.006671,0.006671,2,victima
+muy fuerte,466,0.006491,0.006491,2,victima
+van matar,456,0.006449,0.006449,2,victima
+comision verdad,328,0.006061,0.006061,2,victima
+toda familia,345,0.006011,0.006011,2,victima
+estaba pasando,363,0.00596,0.00596,2,victima
+mil pesos,362,0.005879,0.005879,2,victima
+guerrilla entonces,319,0.005775,0.005775,2,victima
+estaba trabajando,325,0.00571,0.00571,2,victima
+daba miedo,297,0.005706,0.005706,2,victima
+toco salir,311,0.005619,0.005619,2,victima
+margen ley,297,0.005601,0.005601,2,victima
+actores armados,302,0.005597,0.005597,2,victima
+salir adelante,270,0.005588,0.005588,2,victima
+paramilitares entonces,179,0.004135,0.004135,2,victima
+autodefensas unidas colombia,63,0.004159,0.004159,3,victima
+conflicto armado colombiano,31,0.002266,0.002266,3,victima
+cada tres meses,22,0.001875,0.001875,3,victima
+ningun grupo armado,24,0.001872,0.001872,3,victima
+van matar van,32,0.001866,0.001866,3,victima
+recibido algun tipo,24,0.001864,0.001864,3,victima
+hechos vuelvan repetir,21,0.001864,0.001864,3,victima
+violacion derechos humanos,33,0.001861,0.001861,3,victima
+daba miedo porque,24,0.001857,0.001857,3,victima
+esposa sus hijos,23,0.001849,0.001849,3,victima
+victimas unidad victimas,24,0.001835,0.001835,3,victima
+inc autodefensas unidas,20,0.001829,0.001829,3,victima
+estaba muy pequeno,25,0.001816,0.001816,3,victima
+como seres humanos,21,0.001812,0.001812,3,victima
+grupos armados margen,23,0.001812,0.001812,3,victima
+conflicto armado interno,20,0.00181,0.00181,3,victima
+muy mal porque,25,0.001807,0.001807,3,victima
+dentro conflicto armado,20,0.001801,0.001801,3,victima
+dos tres meses,40,0.0018,0.0018,3,victima
+interamericana derechos humanos,23,0.001794,0.001794,3,victima
+porque habian matado,23,0.001794,0.001794,3,victima
+hago parte organizacion,18,0.001792,0.001792,3,victima
+jorge eliecer gaitan,22,0.001786,0.001786,3,victima
+habian matado porque,21,0.001782,0.001782,3,victima
+hace mucha falta,18,0.001781,0.001781,3,victima
+colombiano reforma agraria,22,0.001764,0.001764,3,victima
+sido muy duro,22,0.001752,0.001752,3,victima
+mataban mucha gente,25,0.001738,0.001738,3,victima
+revolucionarias colombia ejercito,24,0.001737,0.001737,3,victima
+eso muy triste,21,0.001734,0.001734,3,victima
+iban matar iban,25,0.001717,0.001717,3,victima
+defensora derechos humanos,26,0.00171,0.00171,3,victima
+gente muy buena,23,0.001709,0.001709,3,victima
+muy buena relacion,22,0.001705,0.001705,3,victima
+fuerza publica policia,18,0.001695,0.001695,3,victima
+esto vuelva repetir,18,0.001692,0.001692,3,victima
+guerrilla guerrilla guerrilla,20,0.001678,0.001678,3,victima
+juan manuel santos,23,0.001673,0.001673,3,victima
+eran paramilitares eran,19,0.001673,0.001673,3,victima
+instituto colombiano reforma,20,0.001668,0.001668,3,victima
+decian iban matar,17,0.00166,0.00166,3,victima
+como tres meses,51,0.001653,0.001653,3,victima
+algun tipo ayuda,22,0.001652,0.001652,3,victima
+hasta quinto primaria,22,0.00164,0.00164,3,victima
+como objetivo militar,19,0.001638,0.001638,3,victima
+unidad restitucion tierras,21,0.001636,0.001636,3,victima
+declarado objetivo militar,18,0.001628,0.001628,3,victima
+papa mama hermanos,22,0.001625,0.001625,3,victima
+eso muy horrible,20,0.001615,0.001615,3,victima

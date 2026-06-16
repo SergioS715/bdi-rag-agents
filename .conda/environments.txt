@@ -1,0 +1,6 @@
+C:\Users\sergi\miniconda3
+C:\Users\sergi\miniconda3\envs\nlp_env
+C:\Users\sergi\miniconda3\envs\proyectoGrado
+C:\Users\sergi\miniconda3\envs\langgraph311
+c:\Users\sergi\miniconda3\envs\langgraph311
+c:\Users\sergi\miniconda3\envs\proyectoGrado

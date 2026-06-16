@@ -1,0 +1,19 @@
+juez;comparacion;n;W_stat;p_valor;sig_bonferroni;rank_biserial
+GPT-5;baseline vs rag_only;39;72,5;7e-06;SI;0,8141
+GPT-5;baseline vs bdi_only;39;353,5;0,795223;NO;0,0936
+GPT-5;baseline vs bdi_rag;39;48,5;1e-06;SI;0,8756
+GPT-5;rag_only vs bdi_only;39;95,5;3,2e-05;SI;0,7551
+GPT-5;rag_only vs bdi_rag;39;248,0;0,070418;NO;0,3641
+GPT-5;bdi_only vs bdi_rag;39;49,0;1e-06;SI;0,8744
+Gemini3Flash;baseline vs rag_only;39;13,0;0,0;SI;0,9667
+Gemini3Flash;baseline vs bdi_only;39;299,0;0,189576;NO;0,2333
+Gemini3Flash;baseline vs bdi_rag;39;2,5;0,0;SI;0,9936
+Gemini3Flash;rag_only vs bdi_only;39;4,0;0,0;SI;0,9897
+Gemini3Flash;rag_only vs bdi_rag;39;357,5;0,640255;NO;0,0833
+Gemini3Flash;bdi_only vs bdi_rag;39;8,5;0,0;SI;0,9782
+Qwen36Plus;baseline vs rag_only;39;5,0;0,0;SI;0,9872
+Qwen36Plus;baseline vs bdi_only;39;388,0;0,976865;NO;0,0051
+Qwen36Plus;baseline vs bdi_rag;39;5,5;0,0;SI;0,9859
+Qwen36Plus;rag_only vs bdi_only;39;28,5;0,0;SI;0,9269
+Qwen36Plus;rag_only vs bdi_rag;39;322,5;0,334841;NO;0,1731
+Qwen36Plus;bdi_only vs bdi_rag;39;0,0;0,0;SI;1,0

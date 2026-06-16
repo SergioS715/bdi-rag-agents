@@ -1,0 +1,4 @@
+juez,chi2,p_valor,significativo
+GPT-5,52.825,0.0,True
+Gemini 3 Flash,82.292,0.0,True
+Qwen 3.6 Plus,80.2,0.0,True

@@ -1,0 +1,4 @@
+juez;n_prompts;chi2_friedman;p_valor;significativo
+GPT-5;39;52,825;0,000000;SI
+Gemini3Flash;39;82,292;0,000000;SI
+Qwen36Plus;39;80,2;0,000000;SI

@@ -1,0 +1,21 @@
+DATOS DEL PROYECTO
+==================
+
+Los archivos PDF del corpus no están incluidos en este repositorio debido a su tamaño.
+
+CORPUS DE ENTREVISTAS (CEV)
+-----------------------------
+Los documentos originales pueden descargarse desde el repositorio oficial de la
+Comisión de la Verdad (CEV):
+
+  https://www.comisiondelaverdad.co/transcripciones-de-entrevistas-anonimizadas
+
+El corpus contiene 2.240 entrevistas transcritas y anonimizadas en formato PDF.
+Una vez descargados, los archivos deben ubicarse en esta carpeta (data/).
+
+BASE DE DATOS VECTORIAL (RAG)
+------------------------------
+La base de datos vectorial utilizada para el componente RAG se encuentra exportada
+en formato JSON y está disponible en el siguiente enlace de Google Drive para su uso se debe cargar en la instancia de mongoDB atlas propio :
+
+    https://drive.google.com/file/d/1Lgbkt-_TuzJc98SiLzj16lmHEsNU43Yj/view?usp=sharing

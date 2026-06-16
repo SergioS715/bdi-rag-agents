@@ -1,0 +1,13 @@
+condicion,actor_id,conflict_vocab_density_response,conflict_vocab_count,rag_transfer_limpio,rag_transfer_lexical,rag_transfer_eufemismos,rag_transfer_expresiones,top_k_similarity,role_purity,vocab_novelty,n_terminos_rag,n_terminos_nuevos,terminos_nuevos
+baseline,tercero,0.0617,20.1538,,,,,,,,,,
+baseline,victima,0.0581,14.5385,,,,,,,,,,
+baseline,victimario,0.034,9.6154,,,,,,,,,,
+bdi_only,tercero,0.0613,18.7692,,,,,,,0.1343,67.0,9.0,"armas, casos, ciudad, guerrilla, muertos, sociedad, tema, temas, trabajar"
+bdi_only,victima,0.0555,15.4615,,,,,,,0.1579,57.0,9.0,"armas, contar, dejaron, denuncia, hombre, hombres, llegamos, mientras, relacion"
+bdi_only,victimario,0.03,8.6923,,,,,,,0.0667,30.0,2.0,"armas, militar"
+bdi_rag,tercero,0.0659,16.0,0.3528,0.4068,0.2064,0.2226,0.8443,1.0,0.1356,59.0,8.0,"casos, colombia, guerrilla, matar, mataron, pueblo, trabajar, victima"
+bdi_rag,victima,0.0547,11.0,0.2982,0.2986,0.084,0.2538,0.8316,1.0,0.2182,55.0,12.0,"contar, farc, guerrillero, guerrilleros, hermana, hija, muerte, ningun, padre, relacion, situacion, victima"
+bdi_rag,victimario,0.0339,9.5385,0.1535,0.1731,0.0721,0.0221,0.8155,0.8462,0.2632,38.0,10.0,"armada, armados, armas, campamento, comandante, combate, militar, militares, paramilitar, paramilitares"
+rag_only,tercero,0.0663,16.0,0.3344,0.3919,0.1885,0.2212,0.842,1.0,0.1935,62.0,12.0,"ciudad, gobierno, guerrilla, matar, mataron, partido, policia, procesos, pueblo, sociedad, tema, trabajar"
+rag_only,victima,0.0616,12.0769,0.2603,0.3036,0.0751,0.222,0.8328,1.0,0.2264,53.0,12.0,"denuncia, llegamos, matan, matar, mientras, muerte, muerto, muertos, mujer, mujeres, tierras, usted"
+rag_only,victimario,0.0366,9.2308,0.2826,0.2466,0.1707,0.2306,0.8258,1.0,0.3421,38.0,13.0,"armada, armas, comandante, comandantes, combate, desplazados, farc, hostigamiento, milicias, militar, militares, organizacion, tropa"

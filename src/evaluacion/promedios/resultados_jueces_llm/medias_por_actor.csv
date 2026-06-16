@@ -1,0 +1,10 @@
+juez;actor;baseline;rag_only;bdi_only;bdi_rag
+GPT-5;victima;5,5385;7,3077;5,8462;8,0769
+GPT-5;victimario;5,4615;7,6154;5,5385;7,2308
+GPT-5;tercero;5,7692;6,7692;5,6154;7,9231
+Gemini3Flash;victima;4,5385;7,5385;4,9231;8,2308
+Gemini3Flash;victimario;4,2308;8,3077;4,5385;7,1538
+Gemini3Flash;tercero;4,3077;7,3846;4,5385;8,3077
+Qwen36Plus;victima;3,6923;7,0769;4,0769;8,0
+Qwen36Plus;victimario;3,7692;7,4615;3,5385;7,0
+Qwen36Plus;tercero;3,6923;7,0769;3,6154;7,6154

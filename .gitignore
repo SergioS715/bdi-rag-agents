@@ -1,0 +1,39 @@
+# Credenciales — NUNCA subir
+.env
+*.env
+
+# Entorno virtual
+.venv/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# IDEs
+.vscode/
+.idea/
+*.code-workspace
+
+# Datos grandes — corpus CEV (200+ PDFs, no redistribuir)
+jupyter/datasets/datos_cev/
+ArchivosCode/Datos/
+
+# Documentos de tesis (entregar por separado)
+docs/*.pdf
+docs/*.docx
+docs/*.pbix
+
+# Anotación de jueces ciegos (datos brutos)
+plantilla_anotacion.xlsx
+
+# Herramientas de desarrollo local
+.claude/
+.history/
+
+# Artefactos de runtime
+.langgraph_api/
+*.pckl

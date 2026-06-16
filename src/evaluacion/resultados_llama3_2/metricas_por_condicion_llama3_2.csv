@@ -1,0 +1,5 @@
+﻿condicion,estabilidad_rol,autenticidad_lexica,autenticidad_emocional,goal_directedness,tactical_consistency,factual_grounding,answer_relevance,lexical_adoption,coherencia_tactica,subordinacion_macro,persona_score,rag_score,bdi_score
+A — Baseline,4.667,4.436,4.41,5.0,4.641,4.333,4.615,,,,4.581,,
+C — BDI only,5.0,4.395,4.5,5.0,4.737,4.405,4.684,,4.658,5.0,4.675,,4.829
+D — BDI+RAG,5.0,4.282,4.256,5.0,4.436,4.421,4.487,4.333,4.026,5.0,4.566,0.627,4.513
+B — RAG only,4.667,4.103,4.256,5.0,4.308,4.231,4.333,4.385,,,4.427,0.62,

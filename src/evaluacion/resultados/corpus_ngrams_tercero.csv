@@ -1,0 +1,242 @@
+ngrama,frecuencia,tfidf,specificity_score,ngram_size,rol
+gente,13228,0.024672,0.176088,1,tercero
+personas,5037,0.019767,0.143795,1,tercero
+organizacion,8242,0.019584,0.244315,1,tercero
+tema,7639,0.019535,0.161869,1,tercero
+estado,5766,0.019347,0.138526,1,tercero
+proceso,4967,0.017888,0.151483,1,tercero
+guerrilla,4439,0.017518,0.205418,1,tercero
+trabajo,3614,0.017192,0.126244,1,tercero
+colombia,4115,0.017132,0.153297,1,tercero
+conflicto,3578,0.016906,0.166668,1,tercero
+grupos,3063,0.016597,0.145484,1,tercero
+zona,3616,0.016509,0.141284,1,tercero
+pais,3151,0.016509,0.171657,1,tercero
+epoca,3720,0.016386,0.201268,1,tercero
+gobierno,4003,0.016201,0.120081,1,tercero
+paramilitares,3288,0.01617,0.197732,1,tercero
+ejercito,3741,0.016128,0.188803,1,tercero
+violencia,2602,0.01605,0.147352,1,tercero
+territorio,3180,0.015966,0.150535,1,tercero
+familia,2620,0.015676,0.125197,1,tercero
+frente,2986,0.015517,0.12821,1,tercero
+politica,3621,0.015395,0.178643,1,tercero
+importante,2831,0.015291,0.123884,1,tercero
+policia,2900,0.015263,0.172687,1,tercero
+situacion,2520,0.015114,0.177531,1,tercero
+paz,3381,0.01502,0.128541,1,tercero
+senor,2903,0.014988,0.18968,1,tercero
+comunidad,2755,0.014885,0.13116,1,tercero
+pueblo,2296,0.014816,0.118997,1,tercero
+derechos,2237,0.014526,0.123362,1,tercero
+social,2181,0.014317,0.116328,1,tercero
+nacional,2325,0.014293,0.108899,1,tercero
+publica,2585,0.014079,0.143557,1,tercero
+guerra,2852,0.014054,0.113541,1,tercero
+mama,2219,0.013966,0.148332,1,tercero
+mujeres,2574,0.013957,0.112446,1,tercero
+comunidades,2441,0.013955,0.137259,1,tercero
+fuerza,2234,0.013891,0.120488,1,tercero
+presencia,2243,0.013855,0.128422,1,tercero
+farc,2405,0.013794,0.155731,1,tercero
+trabajar,1603,0.013739,0.119495,1,tercero
+ademas,2003,0.013707,0.148584,1,tercero
+armado,1910,0.013692,0.147218,1,tercero
+plata,2057,0.013648,0.123444,1,tercero
+mataron,1696,0.013594,0.148218,1,tercero
+informacion,1930,0.013395,0.15461,1,tercero
+hacian,1479,0.013348,0.165608,1,tercero
+tierra,1896,0.013289,0.111328,1,tercero
+armados,1641,0.013158,0.145468,1,tercero
+coca,1705,0.013018,0.139971,1,tercero
+hijos,1378,0.012997,0.110377,1,tercero
+victimas,1625,0.012941,0.156796,1,tercero
+politico,2012,0.012904,0.159186,1,tercero
+militares,1956,0.012848,0.122308,1,tercero
+poblacion,1420,0.012834,0.152538,1,tercero
+llega,1658,0.012813,0.11611,1,tercero
+narcotrafico,1793,0.012501,0.165011,1,tercero
+ninos,1337,0.012398,0.163518,1,tercero
+militar,2311,0.012392,0.112083,1,tercero
+procesos,1573,0.01225,0.122154,1,tercero
+casos,1710,0.012115,0.10453,1,tercero
+actores,1356,0.012068,0.124384,1,tercero
+temas,1370,0.012038,0.108579,1,tercero
+ley,1531,0.012004,0.09395,1,tercero
+organizaciones,1342,0.011991,0.117394,1,tercero
+campesinos,1510,0.011946,0.131551,1,tercero
+movimiento,1898,0.01183,0.104481,1,tercero
+control,1403,0.011812,0.102735,1,tercero
+matar,1158,0.011759,0.113534,1,tercero
+seguridad,1651,0.011757,0.098493,1,tercero
+presidente,1727,0.011711,0.092992,1,tercero
+sector,1175,0.011585,0.105493,1,tercero
+tierras,1445,0.011472,0.111016,1,tercero
+finca,1254,0.011454,0.130777,1,tercero
+partido,1464,0.01144,0.089536,1,tercero
+justicia,1616,0.011439,0.099768,1,tercero
+rio,1169,0.011409,0.119645,1,tercero
+traves,1090,0.011269,0.138813,1,tercero
+politicos,1179,0.011175,0.136029,1,tercero
+indigenas,2052,0.011173,0.147361,1,tercero
+territorios,1123,0.011156,0.119195,1,tercero
+lideres,1132,0.011152,0.138555,1,tercero
+duro,1127,0.011137,0.107271,1,tercero
+armas,1281,0.011112,0.100987,1,tercero
+sociales,1018,0.011082,0.095132,1,tercero
+desarrollo,1059,0.01107,0.091727,1,tercero
+accion,1076,0.010954,0.125982,1,tercero
+jovenes,1241,0.010927,0.129437,1,tercero
+zonas,1250,0.010833,0.101639,1,tercero
+comandante,1371,0.010785,0.108262,1,tercero
+miedo,941,0.010778,0.093238,1,tercero
+diferentes,956,0.010767,0.091922,1,tercero
+comision,1114,0.010652,0.133788,1,tercero
+sociedad,1059,0.010514,0.08712,1,tercero
+guerrilleros,812,0.010478,0.12576,1,tercero
+terminos,883,0.010432,0.133457,1,tercero
+obviamente,1042,0.010406,0.106797,1,tercero
+recursos,1022,0.010405,0.093347,1,tercero
+papel,888,0.01032,0.091145,1,tercero
+colegio,772,0.010312,0.095112,1,tercero
+ciudad,890,0.010286,0.078142,1,tercero
+practicamente,962,0.010264,0.129896,1,tercero
+companeros,1045,0.010258,0.140448,1,tercero
+civil,883,0.010256,0.09177,1,tercero
+masacre,820,0.010161,0.114962,1,tercero
+fuerzas,1165,0.010146,0.091514,1,tercero
+desplazamiento,747,0.010115,0.116751,1,tercero
+cultivos,782,0.010048,0.112158,1,tercero
+campesino,900,0.010022,0.1197,1,tercero
+municipios,858,0.010018,0.105058,1,tercero
+universidad,870,0.009939,0.083482,1,tercero
+perdon,820,0.009904,0.114925,1,tercero
+mil,695,0.009801,0.082543,1,tercero
+muertos,815,0.009752,0.091947,1,tercero
+investigacion,775,0.009691,0.122494,1,tercero
+responsabilidad,710,0.009691,0.091372,1,tercero
+conocimiento,784,0.009572,0.089374,1,tercero
+educacion,690,0.009556,0.112441,1,tercero
+murio,672,0.009518,0.117416,1,tercero
+politicas,818,0.009488,0.121245,1,tercero
+institucion,898,0.009417,0.121935,1,tercero
+impacto,639,0.009333,0.092637,1,tercero
+lider,625,0.009319,0.111133,1,tercero
+proyectos,699,0.009304,0.086024,1,tercero
+victima,556,0.0093,0.113206,1,tercero
+informe,684,0.009295,0.087421,1,tercero
+empresa,864,0.009286,0.07947,1,tercero
+conoci,676,0.009277,0.115588,1,tercero
+amenazas,658,0.009241,0.099939,1,tercero
+salud,852,0.009235,0.079033,1,tercero
+economia,690,0.009233,0.112736,1,tercero
+sectores,856,0.009225,0.091775,1,tercero
+estrategia,736,0.009213,0.09104,1,tercero
+marco,636,0.00921,0.088298,1,tercero
+vereda,661,0.009209,0.10999,1,tercero
+internacional,752,0.009205,0.077523,1,tercero
+publico,665,0.009139,0.101634,1,tercero
+cultura,619,0.009135,0.079024,1,tercero
+paramilitarismo,782,0.009116,0.122443,1,tercero
+decision,843,0.009094,0.113765,1,tercero
+memoria,632,0.009084,0.085854,1,tercero
+conflicto armado,1233,0.01402,0.01402,2,tercero
+derechos humanos,1307,0.013016,0.013016,2,tercero
+muy importante,1076,0.012532,0.012532,2,tercero
+mucha gente,979,0.012264,0.012264,2,tercero
+fuerza publica,1018,0.011895,0.011895,2,tercero
+grupos armados,641,0.010889,0.010889,2,tercero
+muy fuerte,751,0.010856,0.010856,2,tercero
+actores armados,618,0.010438,0.010438,2,tercero
+muy dificil,673,0.010411,0.010411,2,tercero
+estados unidos,981,0.009461,0.009461,2,tercero
+proceso paz,553,0.009312,0.009312,2,tercero
+nivel nacional,357,0.008527,0.008527,2,tercero
+accion comunal,418,0.007976,0.007976,2,tercero
+punto vista,341,0.007866,0.007866,2,tercero
+grupos paramilitares,325,0.007671,0.007671,2,tercero
+acuerdo paz,258,0.007062,0.007062,2,tercero
+fuerzas militares,403,0.006845,0.006845,2,tercero
+fuerzas armadas,291,0.006737,0.006737,2,tercero
+estado colombiano,229,0.006631,0.006631,2,tercero
+partido comunista,275,0.006536,0.006536,2,tercero
+gobierno nacional,249,0.006514,0.006514,2,tercero
+union patriotica,367,0.006385,0.006385,2,tercero
+plan colombia,369,0.006054,0.006054,2,tercero
+comision verdad,209,0.006033,0.006033,2,tercero
+poblacion civil,206,0.006025,0.006025,2,tercero
+hace parte,208,0.005988,0.005988,2,tercero
+lideres sociales,174,0.005967,0.005967,2,tercero
+grupo armado,185,0.005847,0.005847,2,tercero
+margen ley,163,0.005795,0.005795,2,tercero
+juntas accion,197,0.00568,0.00568,2,tercero
+comunidades negras,224,0.00548,0.00548,2,tercero
+casco urbano,163,0.005426,0.005426,2,tercero
+policia ejercito,162,0.005373,0.005373,2,tercero
+cultivos ilicitos,141,0.005371,0.005371,2,tercero
+iban matar,184,0.005349,0.005349,2,tercero
+actor armado,198,0.005326,0.005326,2,tercero
+organizaciones sociales,154,0.005265,0.005265,2,tercero
+comunidades indigenas,241,0.005207,0.005207,2,tercero
+ejercito policia,157,0.005195,0.005195,2,tercero
+sociedad civil,142,0.00519,0.00519,2,tercero
+van matar,159,0.005144,0.005144,2,tercero
+orden publico,169,0.005119,0.005119,2,tercero
+reforma agraria,137,0.005116,0.005116,2,tercero
+falsos positivos,353,0.005036,0.005036,2,tercero
+partido liberal,151,0.005029,0.005029,2,tercero
+habian matado,134,0.005013,0.005013,2,tercero
+movimiento social,157,0.004998,0.004998,2,tercero
+naciones unidas,150,0.004955,0.004955,2,tercero
+violencia sexual,173,0.004948,0.004948,2,tercero
+magdalena medio,169,0.004887,0.004887,2,tercero
+informe final,124,0.004847,0.004847,2,tercero
+junta accion,128,0.004825,0.004825,2,tercero
+control territorial,143,0.004754,0.004754,2,tercero
+america latina,123,0.004635,0.004635,2,tercero
+frente nacional,127,0.004554,0.004554,2,tercero
+pablo escobar,163,0.004538,0.004538,2,tercero
+armadas revolucionarias,90,0.004534,0.004534,2,tercero
+fuerzas armadas revolucionarias,90,0.00966,0.00966,3,tercero
+marco conflicto armado,70,0.007277,0.007277,3,tercero
+conflicto armado interno,45,0.00533,0.00533,3,tercero
+grupos armados margen,28,0.002879,0.002879,3,tercero
+comunidades eclesiales base,52,0.002531,0.002531,3,tercero
+revolucionarias colombia ejercito,12,0.002514,0.002514,3,tercero
+nadie decia nada,15,0.002508,0.002508,3,tercero
+firma acuerdo paz,12,0.002502,0.002502,3,tercero
+como lider social,13,0.002495,0.002495,3,tercero
+hecho mucho dano,16,0.002484,0.002484,3,tercero
+cruz roja internacional,14,0.002481,0.002481,3,tercero
+movimiento derechos humanos,18,0.002472,0.002472,3,tercero
+proceso restitucion tierras,14,0.002464,0.002464,3,tercero
+embajada estados unidos,27,0.002452,0.002452,3,tercero
+busqueda personas desaparecidas,16,0.002427,0.002427,3,tercero
+corte penal internacional,14,0.002385,0.002385,3,tercero
+estado fuerza publica,15,0.002383,0.002383,3,tercero
+conflicto armado colombiano,18,0.002379,0.002379,3,tercero
+partido comunista colombiano,15,0.002378,0.002378,3,tercero
+iban matar entonces,36,0.002376,0.002376,3,tercero
+hago parte organizacion,14,0.002374,0.002374,3,tercero
+muy poca gente,14,0.002365,0.002365,3,tercero
+plan colombia plan,15,0.002364,0.002364,3,tercero
+grupos paramilitares zona,9,0.00236,0.00236,3,tercero
+presencia muy fuerte,17,0.002359,0.002359,3,tercero
+integral verdad justicia,14,0.002348,0.002348,3,tercero
+actores armados territorio,15,0.00234,0.00234,3,tercero
+porque son personas,9,0.002332,0.002332,3,tercero
+estados unidos porque,19,0.00233,0.00233,3,tercero
+ley justicia paz,19,0.002316,0.002316,3,tercero
+esperanza paz libertad,13,0.002305,0.002305,3,tercero
+grupo armado ilegal,20,0.002294,0.002294,3,tercero
+como comunidad negra,11,0.002292,0.002292,3,tercero
+proceso paz farc,14,0.002275,0.002275,3,tercero
+consumo sustancias psicoactivas,13,0.002264,0.002264,3,tercero
+hay muchas mujeres,11,0.002263,0.002263,3,tercero
+plan nacional rehabilitacion,17,0.002263,0.002263,3,tercero
+fuerza publica policia,10,0.002253,0.002253,3,tercero
+comision esclarecimiento verdad,13,0.002247,0.002247,3,tercero
+personas hacen parte,12,0.002237,0.002237,3,tercero
+hay muchos intereses,15,0.002235,0.002235,3,tercero
+combinacion todas formas,14,0.002192,0.002192,3,tercero
+nombre informe final,13,0.002178,0.002178,3,tercero

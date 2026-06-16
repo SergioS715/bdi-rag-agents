@@ -1,0 +1,13 @@
+condicion;rol;subordinacion_macro;lexical_adoption;coherencia_tactica
+baseline;tercero;;;
+baseline;victima;;;
+baseline;victimario;;;
+bdi_only;tercero;5,0;;4,6923076923076925
+bdi_only;victima;5,0;;4,435897435897436
+bdi_only;victimario;4,666666666666667;;4,555555555555555
+bdi_rag;tercero;4,666666666666667;4,461538461538462;4,589743589743589
+bdi_rag;victima;5,0;4,333333333333333;4,076923076923077
+bdi_rag;victimario;5,0;4,205128205128205;4,487179487179487
+rag_only;tercero;;4,282051282051282;
+rag_only;victima;;4,333333333333333;
+rag_only;victimario;;4,487179487179487;

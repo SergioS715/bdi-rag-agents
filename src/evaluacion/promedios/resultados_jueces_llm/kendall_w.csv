@@ -1,0 +1,7 @@
+n_jueces;n_condiciones;W_kendall;interpretacion
+3;4;0,1111;Moderada
+
+juez;baseline;rag_only;bdi_only;bdi_rag;ordenamiento
+GPT-5;5,5897;7,2308;5,6667;7,7436;bdi_rag > rag_only > bdi_only > baseline
+Gemini3Flash;4,359;7,7436;4,6667;7,8974;bdi_rag > rag_only > bdi_only > baseline
+Qwen36Plus;3,7179;7,2051;3,7436;7,5385;bdi_rag > rag_only > bdi_only > baseline

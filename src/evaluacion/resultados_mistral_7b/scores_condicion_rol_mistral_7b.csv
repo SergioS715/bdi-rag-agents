@@ -1,0 +1,13 @@
+﻿condicion,rol,persona_score,rag_score,bdi_score,estabilidad_rol,autenticidad_lexica,autenticidad_emocional,goal_directedness,tactical_consistency,factual_grounding,answer_relevance
+A — Baseline,tercero,4.064,,,4.0,4.0,4.077,4.0,4.154,4.154,4.923
+A — Baseline,victima,4.603,,,5.0,4.0,4.538,5.0,4.692,4.385,5.0
+A — Baseline,victimario,4.064,,,4.0,4.308,4.077,4.0,4.231,3.769,4.923
+C — BDI only,tercero,4.128,,4.923,4.0,4.077,4.077,4.0,4.385,4.231,5.0
+C — BDI only,victima,4.405,,4.808,5.0,3.923,4.462,4.0,4.769,4.25,5.0
+C — BDI only,victimario,4.014,,4.25,4.0,4.25,3.917,4.0,4.417,3.5,5.0
+D — BDI+RAG,tercero,4.026,0.641,4.269,4.0,4.0,4.0,4.0,4.077,4.077,5.0
+D — BDI+RAG,victima,4.564,0.575,4.654,5.0,3.923,4.308,5.0,4.692,4.462,4.923
+D — BDI+RAG,victimario,4.141,0.558,4.769,4.0,4.077,3.923,5.0,4.385,3.462,5.0
+B — RAG only,tercero,4.09,0.602,,4.0,4.0,4.0,4.0,4.154,4.385,5.0
+B — RAG only,victima,4.59,0.569,,5.0,4.0,4.385,5.0,4.538,4.615,4.923
+B — RAG only,victimario,4.038,0.574,,4.0,4.077,3.923,4.0,4.308,3.923,5.0

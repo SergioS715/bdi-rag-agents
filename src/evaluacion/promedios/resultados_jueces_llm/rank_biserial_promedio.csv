@@ -1,0 +1,7 @@
+comparacion;rb_promedio_3jueces;magnitud
+baseline vs rag_only;0,9227;Grande
+baseline vs bdi_only;0,1107;Pequeno
+baseline vs bdi_rag;0,9517;Grande
+rag_only vs bdi_only;0,8906;Grande
+rag_only vs bdi_rag;0,2068;Pequeno
+bdi_only vs bdi_rag;0,9509;Grande

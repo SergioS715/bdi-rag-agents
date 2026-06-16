@@ -1,0 +1,19 @@
+juez,cond_A,cond_B,W_stat,p_raw,p_bonferroni,significativo,mediana_A,mediana_B,direccion
+GPT-5,baseline,bdi_only,353.5,0.795223,1.0,False,5.0,6.0,BDI>BASE
+GPT-5,baseline,rag_only,72.5,7e-06,4.4e-05,True,5.0,7.0,RAG>BASE
+GPT-5,baseline,bdi_rag,48.5,1e-06,9e-06,True,5.0,8.0,BDI+RAG>BASE
+GPT-5,bdi_only,rag_only,95.5,3.2e-05,0.000194,True,6.0,7.0,RAG>BDI
+GPT-5,bdi_only,bdi_rag,49.0,1e-06,9e-06,True,6.0,8.0,BDI+RAG>BDI
+GPT-5,rag_only,bdi_rag,248.0,0.070418,0.422506,False,7.0,8.0,BDI+RAG>RAG
+Gemini 3 Flash,baseline,bdi_only,299.0,0.189576,1.0,False,4.0,5.0,BDI>BASE
+Gemini 3 Flash,baseline,rag_only,13.0,0.0,1e-06,True,4.0,8.0,RAG>BASE
+Gemini 3 Flash,baseline,bdi_rag,2.5,0.0,0.0,True,4.0,8.0,BDI+RAG>BASE
+Gemini 3 Flash,bdi_only,rag_only,4.0,0.0,0.0,True,5.0,8.0,RAG>BDI
+Gemini 3 Flash,bdi_only,bdi_rag,8.5,0.0,1e-06,True,5.0,8.0,BDI+RAG>BDI
+Gemini 3 Flash,rag_only,bdi_rag,357.5,0.640255,1.0,False,8.0,8.0,BDI+RAG>RAG
+Qwen 3.6 Plus,baseline,bdi_only,388.0,0.976865,1.0,False,4.0,3.0,BASE>BDI
+Qwen 3.6 Plus,baseline,rag_only,5.0,0.0,0.0,True,4.0,7.0,RAG>BASE
+Qwen 3.6 Plus,baseline,bdi_rag,5.5,0.0,0.0,True,4.0,8.0,BDI+RAG>BASE
+Qwen 3.6 Plus,bdi_only,rag_only,28.5,0.0,2e-06,True,3.0,7.0,RAG>BDI
+Qwen 3.6 Plus,bdi_only,bdi_rag,0.0,0.0,0.0,True,3.0,8.0,BDI+RAG>BDI
+Qwen 3.6 Plus,rag_only,bdi_rag,322.5,0.334841,1.0,False,7.0,8.0,BDI+RAG>RAG

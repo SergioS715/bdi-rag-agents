@@ -1,0 +1,962 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EntrevistasCEV — Agente Conversacional</title>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg          : #0f0e0c;
+    --bg-panel    : #17160f;
+    --bg-bubble-u : #1e1c14;
+    --bg-bubble-a : #111009;
+    --border      : #2a2820;
+    --accent      : #c8a96e;
+    --accent-dim  : #7a6440;
+    --text        : #e8e0cc;
+    --text-muted  : #6b6452;
+    --text-dim    : #9a8e78;
+    --victima     : #b85c5c;
+    --victimario  : #5c7ab8;
+    --tercero     : #5ca87a;
+    --danger      : #8b3a3a;
+    --radius      : 6px;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 300;
+    height: 100vh;
+    display: flex;
+    overflow: hidden;
+  }
+
+  /* ── SIDEBAR ──────────────────────────────── */
+  .sidebar {
+    width: 260px;
+    min-width: 260px;
+    background: var(--bg-panel);
+    border-right: 1px solid var(--border);
+    display: flex;
+    flex-direction: column;
+    padding: 28px 20px;
+    gap: 28px;
+  }
+
+  .logo {
+    font-family: 'Lora', serif;
+    font-size: 15px;
+    color: var(--accent);
+    letter-spacing: 0.04em;
+    line-height: 1.4;
+  }
+
+  .logo span {
+    display: block;
+    font-size: 11px;
+    font-family: 'IBM Plex Mono', monospace;
+    color: var(--text-muted);
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    margin-top: 4px;
+  }
+
+  .section-label {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 9px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    margin-bottom: 10px;
+  }
+
+  /* ── SELECTOR DE ROL ──────────────────────── */
+  .rol-btn {
+    width: 100%;
+    padding: 12px 14px;
+    background: transparent;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    color: var(--text-dim);
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    cursor: pointer;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.18s ease;
+    margin-bottom: 6px;
+    position: relative;
+  }
+
+  .rol-btn:hover {
+    border-color: var(--accent-dim);
+    color: var(--text);
+    background: rgba(200,169,110,0.04);
+  }
+
+  .rol-btn.active {
+    border-color: var(--accent);
+    color: var(--accent);
+    background: rgba(200,169,110,0.07);
+  }
+
+  .rol-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+
+  .rol-btn[data-rol="victima"]    .rol-dot { background: var(--victima); }
+  .rol-btn[data-rol="victimario"] .rol-dot { background: var(--victimario); }
+  .rol-btn[data-rol="tercero"]    .rol-dot { background: var(--tercero); }
+
+  .rol-btn.active[data-rol="victima"]    { border-color: var(--victima);    color: var(--victima); }
+  .rol-btn.active[data-rol="victimario"] { border-color: var(--victimario); color: var(--victimario); }
+  .rol-btn.active[data-rol="tercero"]    { border-color: var(--tercero);    color: var(--tercero); }
+
+  /* ── ACCIONES SIDEBAR ─────────────────────── */
+  .sidebar-actions { margin-top: auto; display: flex; flex-direction: column; gap: 8px; }
+
+  .btn-ghost {
+    width: 100%;
+    padding: 9px 14px;
+    background: transparent;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    color: var(--text-muted);
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.18s ease;
+  }
+
+  .btn-ghost:hover { border-color: var(--danger); color: var(--danger); }
+
+  /* ── ÁREA PRINCIPAL ───────────────────────── */
+  .main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  /* ── CABECERA ─────────────────────────────── */
+  .header {
+    padding: 20px 32px;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    min-height: 64px;
+  }
+
+  .header-rol-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--text-muted);
+    transition: background 0.3s;
+  }
+
+  .header-titulo {
+    font-family: 'Lora', serif;
+    font-size: 16px;
+    color: var(--text);
+    font-weight: 400;
+  }
+
+  .header-subtitulo {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 10px;
+    color: var(--text-muted);
+    letter-spacing: 0.1em;
+    margin-top: 2px;
+  }
+
+  .status-badge {
+    margin-left: auto;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 9px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    padding: 4px 10px;
+    border-radius: 20px;
+    border: 1px solid var(--border);
+    color: var(--text-muted);
+  }
+
+  .status-badge.conectado { border-color: #3a6b4a; color: #5ca87a; }
+  .status-badge.escribiendo { border-color: var(--accent-dim); color: var(--accent); }
+
+  /* ── MENSAJES ─────────────────────────────── */
+  .mensajes {
+    flex: 1;
+    overflow-y: auto;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    scroll-behavior: smooth;
+  }
+
+  .mensajes::-webkit-scrollbar { width: 4px; }
+  .mensajes::-webkit-scrollbar-track { background: transparent; }
+  .mensajes::-webkit-scrollbar-thumb { background: var(--border); border-radius: 2px; }
+
+  /* ── ESTADO VACÍO ─────────────────────────── */
+  .estado-vacio {
+    margin: auto;
+    text-align: center;
+    max-width: 380px;
+    opacity: 0.5;
+  }
+
+  .estado-vacio-icon {
+    font-size: 32px;
+    margin-bottom: 16px;
+    filter: grayscale(0.5);
+  }
+
+  .estado-vacio h2 {
+    font-family: 'Lora', serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--text-dim);
+    margin-bottom: 8px;
+  }
+
+  .estado-vacio p {
+    font-size: 13px;
+    color: var(--text-muted);
+    line-height: 1.6;
+  }
+
+  /* ── BURBUJAS ─────────────────────────────── */
+  .burbuja-wrap {
+    display: flex;
+    flex-direction: column;
+    max-width: 720px;
+    animation: aparecer 0.2s ease;
+  }
+
+  @keyframes aparecer {
+    from { opacity: 0; transform: translateY(6px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+
+  .burbuja-wrap.usuario { align-self: flex-end; align-items: flex-end; }
+  .burbuja-wrap.agente  { align-self: flex-start; align-items: flex-start; }
+
+  .burbuja-meta {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 9px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    margin-bottom: 6px;
+    padding: 0 4px;
+  }
+
+  .burbuja {
+    padding: 14px 18px;
+    border-radius: var(--radius);
+    font-size: 14px;
+    line-height: 1.7;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 300;
+    border: 1px solid var(--border);
+    max-width: 100%;
+    white-space: pre-wrap;
+    word-break: break-word;
+  }
+
+  .burbuja-wrap.usuario .burbuja {
+    background: var(--bg-bubble-u);
+    color: var(--text-dim);
+    border-color: var(--border);
+  }
+
+  .burbuja-wrap.agente .burbuja {
+    background: var(--bg-bubble-a);
+    color: var(--text);
+    border-color: #221f14;
+    font-family: 'Lora', serif;
+    font-size: 15px;
+  }
+
+  /* Color de borde según rol activo */
+  .burbuja-wrap.agente.victima    .burbuja { border-left: 2px solid var(--victima); }
+  .burbuja-wrap.agente.victimario .burbuja { border-left: 2px solid var(--victimario); }
+  .burbuja-wrap.agente.tercero    .burbuja { border-left: 2px solid var(--tercero); }
+
+  /* ── CURSOR DE ESCRITURA ──────────────────── */
+  .cursor {
+    display: inline-block;
+    width: 2px;
+    height: 1em;
+    background: var(--accent);
+    margin-left: 2px;
+    vertical-align: text-bottom;
+    animation: parpadeo 0.8s steps(1) infinite;
+  }
+
+  @keyframes parpadeo {
+    0%, 100% { opacity: 1; }
+    50%       { opacity: 0; }
+  }
+
+  /* ── INPUT ────────────────────────────────── */
+  .input-area {
+    padding: 20px 32px 24px;
+    border-top: 1px solid var(--border);
+    background: var(--bg);
+  }
+
+  .input-wrap {
+    display: flex;
+    gap: 10px;
+    align-items: flex-end;
+    background: var(--bg-panel);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 12px 14px;
+    transition: border-color 0.2s;
+  }
+
+  .input-wrap:focus-within { border-color: var(--accent-dim); }
+
+  textarea {
+    flex: 1;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: var(--text);
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.6;
+    resize: none;
+    max-height: 160px;
+    min-height: 24px;
+    overflow-y: auto;
+  }
+
+  textarea::placeholder { color: var(--text-muted); }
+
+  textarea::-webkit-scrollbar { width: 3px; }
+  textarea::-webkit-scrollbar-thumb { background: var(--border); }
+
+  .btn-enviar {
+    background: var(--accent);
+    border: none;
+    border-radius: 4px;
+    width: 34px;
+    height: 34px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    transition: all 0.18s ease;
+    color: var(--bg);
+  }
+
+  .btn-enviar:hover:not(:disabled) { background: #d4b87a; transform: scale(1.05); }
+  .btn-enviar:disabled { background: var(--border); cursor: not-allowed; color: var(--text-muted); }
+
+  .btn-enviar svg { width: 16px; height: 16px; }
+
+  .input-hint {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 9px;
+    color: var(--text-muted);
+    letter-spacing: 0.1em;
+    margin-top: 8px;
+    text-align: right;
+  }
+
+  /* ── SELECTOR DE CONDICIÓN ───────────────── */
+  .cond-btn {
+    width: 100%;
+    padding: 10px 14px;
+    background: transparent;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    color: var(--text-muted);
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    transition: all 0.18s ease;
+    margin-bottom: 5px;
+  }
+
+  .cond-btn:hover {
+    border-color: var(--accent-dim);
+    color: var(--text);
+    background: rgba(200,169,110,0.04);
+  }
+
+  .cond-btn.active {
+    border-color: var(--accent);
+    color: var(--accent);
+    background: rgba(200,169,110,0.07);
+  }
+
+  .cond-tag {
+    font-size: 9px;
+    padding: 2px 6px;
+    border-radius: 3px;
+    background: rgba(200,169,110,0.12);
+    color: var(--accent-dim);
+    letter-spacing: 0.1em;
+    white-space: nowrap;
+  }
+
+  .cond-btn.active .cond-tag {
+    background: rgba(200,169,110,0.2);
+    color: var(--accent);
+  }
+
+  /* ── SELECCIÓN DE ROL REQUERIDA ───────────── */
+  .overlay-rol {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(15,14,12,0.85);
+    z-index: 100;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(4px);
+  }
+
+  .overlay-rol.visible { display: flex; }
+
+  .overlay-card {
+    background: var(--bg-panel);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 40px;
+    max-width: 420px;
+    width: 90%;
+    text-align: center;
+  }
+
+  .overlay-card h2 {
+    font-family: 'Lora', serif;
+    font-size: 22px;
+    font-weight: 400;
+    color: var(--text);
+    margin-bottom: 8px;
+  }
+
+  .overlay-card p {
+    font-size: 13px;
+    color: var(--text-muted);
+    margin-bottom: 28px;
+    line-height: 1.6;
+  }
+
+  .overlay-roles { display: flex; flex-direction: column; gap: 10px; }
+
+  .overlay-rol-btn {
+    padding: 14px 20px;
+    border-radius: var(--radius);
+    border: 1px solid var(--border);
+    background: transparent;
+    color: var(--text-dim);
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    transition: all 0.18s;
+  }
+
+  .overlay-rol-btn:hover { border-color: var(--accent); color: var(--text); }
+
+  .overlay-rol-desc {
+    font-size: 11px;
+    color: var(--text-muted);
+    margin-top: 2px;
+    font-weight: 300;
+  }
+</style>
+</head>
+<body>
+
+<!-- ── OVERLAY selección inicial de rol ───── -->
+<div class="overlay-rol visible" id="overlayRol">
+  <div class="overlay-card">
+    <h2>¿Con quién deseas hablar?</h2>
+    <p>Selecciona el actor del conflicto armado colombiano con el que quieres conversar.</p>
+    <div class="overlay-roles">
+      <button class="overlay-rol-btn" onclick="seleccionarRol('victima')">
+        <span class="rol-dot" style="background:var(--victima);width:10px;height:10px;border-radius:50%;flex-shrink:0"></span>
+        <div>
+          <div>Víctima</div>
+          <div class="overlay-rol-desc">Persona que sufrió daños directos por el conflicto</div>
+        </div>
+      </button>
+      <button class="overlay-rol-btn" onclick="seleccionarRol('victimario')">
+        <span class="rol-dot" style="background:var(--victimario);width:10px;height:10px;border-radius:50%;flex-shrink:0"></span>
+        <div>
+          <div>Victimario</div>
+          <div class="overlay-rol-desc">Actor armado que participó en el conflicto</div>
+        </div>
+      </button>
+      <button class="overlay-rol-btn" onclick="seleccionarRol('tercero')">
+        <span class="rol-dot" style="background:var(--tercero);width:10px;height:10px;border-radius:50%;flex-shrink:0"></span>
+        <div>
+          <div>Tercero</div>
+          <div class="overlay-rol-desc">Observador externo, académico o funcionario</div>
+        </div>
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- ── SIDEBAR ─────────────────────────────── -->
+<aside class="sidebar">
+  <div class="logo">
+    EntrevistasCEV
+    <span>Agente Conversacional</span>
+  </div>
+
+  <div>
+    <div class="section-label">Actor activo</div>
+    <button class="rol-btn" data-rol="victima"    onclick="seleccionarRol('victima')">
+      <span class="rol-dot"></span> Víctima
+    </button>
+    <button class="rol-btn" data-rol="victimario" onclick="seleccionarRol('victimario')">
+      <span class="rol-dot"></span> Victimario
+    </button>
+    <button class="rol-btn" data-rol="tercero"    onclick="seleccionarRol('tercero')">
+      <span class="rol-dot"></span> Tercero
+    </button>
+  </div>
+
+  <div>
+    <div class="section-label">Modo del sistema</div>
+    <button class="cond-btn active" data-cond="bdi_rag"  onclick="seleccionarCondicion('bdi_rag')">
+      BDI + RAG <span class="cond-tag">completo</span>
+    </button>
+    <button class="cond-btn" data-cond="bdi_only" onclick="seleccionarCondicion('bdi_only')">
+      BDI <span class="cond-tag">sin RAG</span>
+    </button>
+    <button class="cond-btn" data-cond="rag_only" onclick="seleccionarCondicion('rag_only')">
+      RAG <span class="cond-tag">sin BDI</span>
+    </button>
+    <button class="cond-btn" data-cond="baseline" onclick="seleccionarCondicion('baseline')">
+      Baseline <span class="cond-tag">prompt base</span>
+    </button>
+  </div>
+
+  <div class="sidebar-actions">
+    <div class="section-label">Conversación</div>
+    <button class="btn-ghost" onclick="resetearActual()">↺ Reiniciar actual</button>
+    <button class="btn-ghost" onclick="resetearTodo()"  style="border-color:#3a2020;color:var(--danger)">⊗ Borrar todo</button>
+  </div>
+</aside>
+
+<!-- ── MAIN ───────────────────────────────── -->
+<main class="main">
+
+  <!-- Cabecera -->
+  <header class="header">
+    <div class="header-rol-dot" id="headerDot"></div>
+    <div>
+      <div class="header-titulo" id="headerTitulo">Selecciona un actor</div>
+      <div class="header-subtitulo" id="headerSub">Comisión de la Verdad — Conflicto Armado Colombiano &nbsp;·&nbsp; <span id="headerCondicion">BDI + RAG</span></div>
+    </div>
+    <div class="status-badge" id="statusBadge">desconectado</div>
+  </header>
+
+  <!-- Mensajes -->
+  <div class="mensajes" id="mensajes">
+    <div class="estado-vacio" id="estadoVacio">
+      <div class="estado-vacio-icon">📜</div>
+      <h2>Inicia una conversación</h2>
+      <p>Selecciona un actor del conflicto y escribe tu primera pregunta. El agente responderá desde la perspectiva del rol seleccionado.</p>
+    </div>
+  </div>
+
+  <!-- Input -->
+  <div class="input-area">
+    <div class="input-wrap">
+      <textarea
+        id="inputMensaje"
+        placeholder="Escribe tu pregunta..."
+        rows="1"
+        onkeydown="manejarTecla(event)"
+        oninput="ajustarAltura(this)"
+      ></textarea>
+      <button class="btn-enviar" id="btnEnviar" onclick="enviarMensaje()" disabled>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+          <line x1="12" y1="19" x2="12" y2="5"/>
+          <polyline points="5 12 12 5 19 12"/>
+        </svg>
+      </button>
+    </div>
+    <div class="input-hint">Enter para enviar &nbsp;·&nbsp; Shift+Enter nueva línea</div>
+  </div>
+
+</main>
+
+<script>
+// ── Estado global ─────────────────────────────────────────────────
+let rolActual       = null;
+let condicionActual = 'bdi_rag';
+let ws              = null;
+let enviando        = false;
+const historial     = {};   // { "victima-bdi_rag": [...], ... }
+
+const COLORES_ROL = {
+  victima   : 'var(--victima)',
+  victimario: 'var(--victimario)',
+  tercero   : 'var(--tercero)',
+};
+
+const NOMBRES_ROL = {
+  victima   : 'Víctima del conflicto',
+  victimario: 'Actor armado',
+  tercero   : 'Observador externo',
+};
+
+const NOMBRES_CONDICION = {
+  bdi_rag  : 'BDI + RAG',
+  bdi_only : 'BDI',
+  rag_only : 'RAG',
+  baseline : 'Baseline',
+};
+
+// ── Clave de historial ────────────────────────────────────────────
+function claveHistorial() {
+  return `${rolActual}-${condicionActual}`;
+}
+
+// ── Selección de rol ──────────────────────────────────────────────
+function seleccionarRol(rol) {
+  rolActual = rol;
+
+  // Ocultar overlay
+  document.getElementById('overlayRol').classList.remove('visible');
+
+  // Actualizar sidebar
+  document.querySelectorAll('.rol-btn').forEach(b => {
+    b.classList.toggle('active', b.dataset.rol === rol);
+  });
+
+  // Actualizar cabecera
+  document.getElementById('headerDot').style.background = COLORES_ROL[rol];
+  document.getElementById('headerTitulo').textContent    = NOMBRES_ROL[rol];
+
+  // Habilitar input
+  document.getElementById('btnEnviar').disabled = false;
+  document.getElementById('inputMensaje').focus();
+
+  // Inicializar historial si no existe
+  const clave = claveHistorial();
+  if (!historial[clave]) historial[clave] = [];
+
+  // Renderizar mensajes del rol
+  renderizarMensajes();
+
+  // Conectar WebSocket
+  conectarWS();
+}
+
+// ── Selección de condición ────────────────────────────────────────
+function seleccionarCondicion(cond) {
+  condicionActual = cond;
+
+  // Actualizar botones de condición
+  document.querySelectorAll('.cond-btn').forEach(b => {
+    b.classList.toggle('active', b.dataset.cond === cond);
+  });
+
+  // Actualizar etiqueta en header
+  document.getElementById('headerCondicion').textContent = NOMBRES_CONDICION[cond] || cond;
+
+  // Si hay un rol activo, inicializar historial para esta combinación y renderizar
+  if (rolActual) {
+    const clave = claveHistorial();
+    if (!historial[clave]) historial[clave] = [];
+    renderizarMensajes();
+  }
+}
+
+// ── WebSocket ─────────────────────────────────────────────────────
+function conectarWS() {
+  if (ws) { ws.close(); ws = null; }
+
+  ws = new WebSocket(`ws://${location.host}/ws/chat`);
+
+  ws.onopen = () => {
+    actualizarStatus('conectado', 'conectado');
+  };
+
+  ws.onclose = () => {
+    actualizarStatus('desconectado', '');
+    // Reconectar si hay un rol activo
+    if (rolActual) setTimeout(conectarWS, 2000);
+  };
+
+  ws.onerror = () => {
+    actualizarStatus('error', '');
+  };
+
+  ws.onmessage = (event) => {
+    const data = JSON.parse(event.data);
+
+    if (data.error) {
+      agregarMensajeAgente(`[Error: ${data.error}]`);
+      setEnviando(false);
+      return;
+    }
+
+    if (data.streaming === true) {
+      // Crear burbuja vacía del agente con cursor
+      crearBurbujaAgente();
+      actualizarStatus('conectado', 'escribiendo...');
+      return;
+    }
+
+    if (data.chunk !== undefined) {
+      // Agregar chunk a la burbuja activa
+      agregarChunk(data.chunk);
+      return;
+    }
+
+    if (data.streaming === false) {
+      // Finalizar burbuja — quitar cursor
+      finalizarBurbuja(data.respuesta);
+      actualizarStatus('conectado', 'conectado');
+      setEnviando(false);
+
+      // Guardar en historial
+      const msgs = historial[claveHistorial()];
+      if (msgs && msgs.length > 0) {
+        msgs[msgs.length - 1].contenido = data.respuesta;
+      }
+    }
+  };
+}
+
+// ── Envío de mensajes ─────────────────────────────────────────────
+function enviarMensaje() {
+  if (!rolActual || enviando) return;
+
+  const input   = document.getElementById('inputMensaje');
+  const mensaje = input.value.trim();
+  if (!mensaje) return;
+
+  if (!ws || ws.readyState !== WebSocket.OPEN) {
+    conectarWS();
+    setTimeout(() => enviarMensaje(), 800);
+    return;
+  }
+
+  // Agregar mensaje del usuario a la UI
+  agregarMensajeUsuario(mensaje);
+
+  // Agregar placeholder para la respuesta del agente
+  historial[claveHistorial()].push({ rol: 'agente', contenido: '' });
+
+  // Limpiar input
+  input.value = '';
+  ajustarAltura(input);
+  setEnviando(true);
+
+  // Enviar por WebSocket (incluye condición experimental)
+  ws.send(JSON.stringify({ mensaje, id_actor: rolActual, condicion: condicionActual }));
+}
+
+function manejarTecla(e) {
+  if (e.key === 'Enter' && !e.shiftKey) {
+    e.preventDefault();
+    enviarMensaje();
+  }
+}
+
+// ── Renderizado de mensajes ───────────────────────────────────────
+function renderizarMensajes() {
+  const container  = document.getElementById('mensajes');
+  const vacio      = document.getElementById('estadoVacio');
+  const msgs       = historial[claveHistorial()] || [];
+
+  // Limpiar contenedor
+  container.innerHTML = '';
+
+  if (msgs.length === 0) {
+    // Mostrar estado vacío
+    if (vacio) {
+      vacio.style.display = 'block';
+      container.appendChild(vacio);
+    }
+    return;
+  }
+
+  // Ocultar estado vacío y renderizar mensajes
+  if (vacio) vacio.style.display = 'none';
+
+  msgs.forEach(msg => {
+    if (msg.rol === 'usuario') {
+      container.appendChild(crearWrapUsuario(msg.contenido));
+    } else {
+      container.appendChild(crearWrapAgente(msg.contenido));
+    }
+  });
+
+  scrollAbajo();
+}
+
+function agregarMensajeUsuario(texto) {
+  historial[claveHistorial()].push({ rol: 'usuario', contenido: texto });
+
+  const container = document.getElementById('mensajes');
+  const vacio     = document.getElementById('estadoVacio');
+  if (vacio) vacio.style.display = 'none';
+  container.appendChild(crearWrapUsuario(texto));
+  scrollAbajo();
+}
+
+function agregarMensajeAgente(texto) {
+  const container = document.getElementById('mensajes');
+  container.appendChild(crearWrapAgente(texto));
+  scrollAbajo();
+}
+
+// ── Streaming ─────────────────────────────────────────────────────
+let burbujaActiva = null;
+let textoActivo   = '';
+
+function crearBurbujaAgente() {
+  const container = document.getElementById('mensajes');
+  const wrap      = crearWrapAgente('');
+  burbujaActiva   = wrap.querySelector('.burbuja');
+  textoActivo     = '';
+
+  // Agregar cursor
+  const cursor = document.createElement('span');
+  cursor.className = 'cursor';
+  cursor.id = 'cursorActivo';
+  burbujaActiva.appendChild(cursor);
+
+  container.appendChild(wrap);
+  scrollAbajo();
+}
+
+function agregarChunk(chunk) {
+  if (!burbujaActiva) return;
+  textoActivo += chunk;
+
+  const cursor = document.getElementById('cursorActivo');
+  burbujaActiva.textContent = textoActivo;
+  if (cursor) burbujaActiva.appendChild(cursor);
+  scrollAbajo();
+}
+
+function finalizarBurbuja(textoFinal) {
+  if (!burbujaActiva) return;
+  burbujaActiva.textContent = textoFinal || textoActivo;
+  burbujaActiva   = null;
+  textoActivo     = '';
+}
+
+// ── Constructores de burbujas ─────────────────────────────────────
+function crearWrapUsuario(texto) {
+  const wrap = document.createElement('div');
+  wrap.className = 'burbuja-wrap usuario';
+
+  const meta = document.createElement('div');
+  meta.className = 'burbuja-meta';
+  meta.textContent = 'Tú';
+
+  const burbuja = document.createElement('div');
+  burbuja.className = 'burbuja';
+  burbuja.textContent = texto;
+
+  wrap.appendChild(meta);
+  wrap.appendChild(burbuja);
+  return wrap;
+}
+
+function crearWrapAgente(texto) {
+  const wrap = document.createElement('div');
+  wrap.className = `burbuja-wrap agente ${rolActual || ''}`;
+
+  const meta = document.createElement('div');
+  meta.className = 'burbuja-meta';
+  meta.textContent = NOMBRES_ROL[rolActual] || 'Actor';
+
+  const burbuja = document.createElement('div');
+  burbuja.className = 'burbuja';
+  if (texto) burbuja.textContent = texto;
+
+  wrap.appendChild(meta);
+  wrap.appendChild(burbuja);
+  return wrap;
+}
+
+// ── Reset ─────────────────────────────────────────────────────────
+async function resetearActual() {
+  if (!rolActual) return;
+  const label = `${NOMBRES_ROL[rolActual]} (${NOMBRES_CONDICION[condicionActual]})`;
+  if (!confirm(`¿Borrar la conversación con ${label}?`)) return;
+
+  await fetch(`/reset-memoria/${rolActual}`, { method: 'POST' });
+  historial[claveHistorial()] = [];
+  renderizarMensajes();
+}
+
+async function resetearTodo() {
+  if (!confirm('¿Borrar todas las conversaciones? Esta acción no se puede deshacer.')) return;
+  await fetch('/reset-memoria', { method: 'POST' });
+  Object.keys(historial).forEach(k => historial[k] = []);
+  renderizarMensajes();
+}
+
+// ── Utilidades ────────────────────────────────────────────────────
+function setEnviando(val) {
+  enviando = val;
+  document.getElementById('btnEnviar').disabled = val;
+  document.getElementById('inputMensaje').disabled = val;
+}
+
+function actualizarStatus(clase, texto) {
+  const badge = document.getElementById('statusBadge');
+  badge.className  = `status-badge ${clase}`;
+  badge.textContent = texto || clase;
+}
+
+function ajustarAltura(el) {
+  el.style.height = 'auto';
+  el.style.height = Math.min(el.scrollHeight, 160) + 'px';
+}
+
+function scrollAbajo() {
+  const c = document.getElementById('mensajes');
+  c.scrollTop = c.scrollHeight;
+}
+</script>
+</body>
+</html>

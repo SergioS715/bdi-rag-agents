@@ -1,0 +1,10 @@
+actor_id,condicion,vocab_novelty,n_terminos_rag,n_terminos_nuevos,terminos_nuevos
+tercero,bdi_only,0.1343,67,9,"armas, casos, ciudad, guerrilla, muertos, sociedad, tema, temas, trabajar"
+tercero,bdi_rag,0.1356,59,8,"casos, colombia, guerrilla, matar, mataron, pueblo, trabajar, victima"
+tercero,rag_only,0.1935,62,12,"ciudad, gobierno, guerrilla, matar, mataron, partido, policia, procesos, pueblo, sociedad, tema, trabajar"
+victima,bdi_only,0.1579,57,9,"armas, contar, dejaron, denuncia, hombre, hombres, llegamos, mientras, relacion"
+victima,bdi_rag,0.2182,55,12,"contar, farc, guerrillero, guerrilleros, hermana, hija, muerte, ningun, padre, relacion, situacion, victima"
+victima,rag_only,0.2264,53,12,"denuncia, llegamos, matan, matar, mientras, muerte, muerto, muertos, mujer, mujeres, tierras, usted"
+victimario,bdi_only,0.0667,30,2,"armas, militar"
+victimario,bdi_rag,0.2632,38,10,"armada, armados, armas, campamento, comandante, combate, militar, militares, paramilitar, paramilitares"
+victimario,rag_only,0.3421,38,13,"armada, armas, comandante, comandantes, combate, desplazados, farc, hostigamiento, milicias, militar, militares, organizacion, tropa"
