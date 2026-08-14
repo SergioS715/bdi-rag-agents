@@ -30,7 +30,7 @@ import logging
 import re
 from dataclasses import dataclass, field
 
-from openai import OpenAI
+from openai import OpenAI as _OpenAIClient
 
 import sys
 from pathlib import Path
@@ -45,7 +45,13 @@ from sabiduria_convencional import (
 
 logger = logging.getLogger(__name__)
 
-_MODELO_MICRO = config.OPENAI_LLM_MODEL_BDI
+_MODELO_MICRO = config.DEEPSEEK_LLM_MODEL_BDI
+
+def _deepseek_client() -> _OpenAIClient:
+    return _OpenAIClient(
+        api_key  = config.DEEPSEEK_API_KEY,
+        base_url = config.DEEPSEEK_BASE_URL,
+    )
 
 _USAR_MICRO_UNIFICADO = True
 
@@ -486,7 +492,7 @@ def analizar_turno(mensaje: str) -> TurnoAnalisis:
     Clasifica el último mensaje recibido (§3.5.1).
     Determina tipo de utterance y credibilidad bruta.
     """
-    client = OpenAI(api_key=config.OPENAI_API_KEY)
+    client = _deepseek_client()
 
     try:
         response = client.chat.completions.create(
@@ -695,7 +701,7 @@ def generar_micro_deseo(
     Determina el objetivo táctico del turno (§3.5.3).
     El LLM elige la etapa_discusion CEV más coherente.
     """
-    client = OpenAI(api_key=config.OPENAI_API_KEY)
+    client = _deepseek_client()
 
     prompt = _PROMPT_MICRO_DESEO.format(
         rol             = rol,
@@ -830,7 +836,7 @@ def generar_micro_intencion(
     Genera la unidad de decisión para el turno (§3.5.4).
     YAML con estructura + contenido — mismo formato que el paper.
     """
-    client = OpenAI(api_key=config.OPENAI_API_KEY)
+    client = _deepseek_client()
 
     # Buscar patrón discursivo según etapa y estado actual de la conversación
     caso = _obtener_patron_discursivo(rol, micro_deseo.etapa_discusion, micro_creencia)
@@ -1110,7 +1116,7 @@ def _procesar_turno_unificado(
     La lógica Python (actualizar_micro_creencia, validar_coherencia) se
     mantiene idéntica. Solo se consolida la parte LLM.
     """
-    client = OpenAI(api_key=config.OPENAI_API_KEY)
+    client = _deepseek_client()
 
     situacion = _detectar_situacion(ultimo_mensaje, rol)
     nota_rol = _construir_nota_rol_unificada(rol, actor_contexto, situacion)

@@ -2,17 +2,22 @@ from langchain_core.tools import tool
 from rag.retrievers import obtener_recuperador
 from config import RAG_TEXT_EMBEDDING_MODEL_ID, RAG_TOP_K, RAG_DEVICE
 
-recuperador = obtener_recuperador(
-    id_modelo_embedding=RAG_TEXT_EMBEDDING_MODEL_ID,
-    k=RAG_TOP_K,
-    dispositivo=RAG_DEVICE
-)
+# Inicialización lazy: el recuperador se crea solo cuando se invoca RAG por
+# primera vez, evitando que el servidor falle al arrancar si Atlas no está
+# configurado o la URI es inválida.
+_recuperador = None
+_vectorstore  = None
 
-# Vector store directo — lo usamos con pre_filter para garantizar que los
-# chunks recuperados sean del rol correcto. El hybrid retriever de Atlas
-# no expone pre_filter de forma estable entre versiones, así que hacemos
-# la búsqueda vectorial con filtro duro y nos apoyamos en dotProduct.
-_vectorstore = recuperador.vectorstore
+def _get_vectorstore():
+    global _recuperador, _vectorstore
+    if _vectorstore is None:
+        _recuperador = obtener_recuperador(
+            id_modelo_embedding=RAG_TEXT_EMBEDDING_MODEL_ID,
+            k=RAG_TOP_K,
+            dispositivo=RAG_DEVICE,
+        )
+        _vectorstore = _recuperador.vectorstore
+    return _vectorstore
 
 # ─── Metadata del último retrieval (para métricas de calidad) ────────────────
 _ultimo_retrieval_metadata: dict = {}
@@ -109,7 +114,7 @@ def _buscar_con_filtro(query_expandida: str, rol: str, k: int) -> tuple[list, li
     # Camino 1 — pre_filter nativo (más eficiente, requiere índice vectorSearch)
     if _pre_filter_soportado is not False:
         try:
-            score_docs = _vectorstore.similarity_search_with_score(
+            score_docs = _get_vectorstore().similarity_search_with_score(
                 query_expandida,
                 k=k,
                 pre_filter=_construir_pre_filter(rol),
@@ -130,7 +135,7 @@ def _buscar_con_filtro(query_expandida: str, rol: str, k: int) -> tuple[list, li
     # Camino 2 — post-filtrado: pedimos más, filtramos por rol en cliente
     k_ampliado = k * _FACTOR_EXPANSION_K
     try:
-        score_docs = _vectorstore.similarity_search_with_score(
+        score_docs = _get_vectorstore().similarity_search_with_score(
             query_expandida,
             k=k_ampliado,
         )

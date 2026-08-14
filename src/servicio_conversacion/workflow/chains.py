@@ -15,7 +15,12 @@ import re
 
 from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
 from langchain_openai import ChatOpenAI
-from config import OPENAI_API_KEY, OPENAI_LLM_MODEL, OPENAI_LLM_MODEL_CONTEXT_SUMMARY
+from config import (
+    DEEPSEEK_API_KEY,
+    DEEPSEEK_BASE_URL,
+    DEEPSEEK_LLM_MODEL,
+    DEEPSEEK_LLM_MODEL_CONTEXT_SUMMARY,
+)
 from jinja2 import Template
 from tools import herramientas
 from prompts import (
@@ -45,10 +50,11 @@ def _escapar_curly_braces_rag(texto: str) -> str:
 
 def obtener_modelo_chat(
     temperature: float = 0.7,
-    model_name : str   = OPENAI_LLM_MODEL,
+    model_name : str   = DEEPSEEK_LLM_MODEL,
 ) -> ChatOpenAI:
     return ChatOpenAI(
-        api_key    = OPENAI_API_KEY,
+        api_key    = DEEPSEEK_API_KEY,
+        base_url   = DEEPSEEK_BASE_URL,
         model_name = model_name,
         temperature= temperature,
     )
@@ -106,7 +112,7 @@ def obtener_cadena_resumen_conversacion(
     resumen_conversacion : str = "",
     actor_nombre         : str = "",
 ):
-    model = obtener_modelo_chat(model_name=OPENAI_LLM_MODEL_CONTEXT_SUMMARY)
+    model = obtener_modelo_chat(model_name=DEEPSEEK_LLM_MODEL_CONTEXT_SUMMARY)
     template = PROMPT_EXTENDER_RESUMEN if resumen_conversacion else PROMPT_RESUMEN
     mensaje_renderizado = Template(template).render(
         resumen_conversacion = resumen_conversacion,
@@ -122,7 +128,7 @@ def obtener_cadena_resumen_conversacion(
 
 
 def obtener_cadena_resumen_contexto(id_actor: str = ""):
-    model = obtener_modelo_chat(model_name=OPENAI_LLM_MODEL_CONTEXT_SUMMARY)
+    model = obtener_modelo_chat(model_name=DEEPSEEK_LLM_MODEL_CONTEXT_SUMMARY)
     system_rendered = Template(PROMPT_RESUMEN_CONTEXTO).render(id_actor=id_actor)
     prompt = ChatPromptTemplate.from_messages([
         ("system", system_rendered),

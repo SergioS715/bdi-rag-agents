@@ -29,7 +29,7 @@ import re
 import logging
 from dataclasses import dataclass, field, asdict
 
-from openai import OpenAI
+from openai import OpenAI as _OpenAIClient
 
 # ─── Config ───────────────────────────────────────────────────────────────────
 
@@ -40,7 +40,13 @@ import config
 
 logger = logging.getLogger(__name__)
 
-_MODELO_MBTI = config.OPENAI_LLM_MODEL_BDI
+_MODELO_MBTI = config.DEEPSEEK_LLM_MODEL_BDI
+
+def _deepseek_client() -> _OpenAIClient:
+    return _OpenAIClient(
+        api_key  = config.DEEPSEEK_API_KEY,
+        base_url = config.DEEPSEEK_BASE_URL,
+    )
 
 
 # ══════════════════════════════════════════════════════════════════════════════
@@ -531,7 +537,7 @@ def estimar_mbti(perfil_texto: str, nombre_actor: str = "actor") -> PerfilMBTI:
         PerfilMBTI con los 8 valores estimados en [0, 1].
         En caso de error de parseo retorna valores por defecto (0.5).
     """
-    client = OpenAI(api_key=config.OPENAI_API_KEY)
+    client = _deepseek_client()
 
     prompt = _PROMPT_MBTI.format(
         perfil=perfil_texto,

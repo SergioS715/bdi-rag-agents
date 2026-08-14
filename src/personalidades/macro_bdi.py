@@ -30,7 +30,7 @@ from __future__ import annotations
 import logging
 from dataclasses import dataclass, field
 
-from openai import OpenAI
+from openai import OpenAI as _OpenAIClient
 
 import sys
 from pathlib import Path
@@ -46,8 +46,14 @@ from sabiduria_convencional import (
 
 logger = logging.getLogger(__name__)
 
-# Modelo liviano — igual que resúmenes y MBTI
-_MODELO_MACRO = config.OPENAI_LLM_MODEL_BDI
+# Modelo para BDI (DeepSeek)
+_MODELO_MACRO = config.DEEPSEEK_LLM_MODEL_BDI
+
+def _deepseek_client() -> _OpenAIClient:
+    return _OpenAIClient(
+        api_key  = config.DEEPSEEK_API_KEY,
+        base_url = config.DEEPSEEK_BASE_URL,
+    )
 
 
 # ══════════════════════════════════════════════════════════════════════════════
@@ -319,7 +325,7 @@ def generar_macro_bdi(
         banco_casos         = banco_formateado,
     )
 
-    client = OpenAI(api_key=config.OPENAI_API_KEY)
+    client = _deepseek_client()
 
     try:
         response = client.chat.completions.create(

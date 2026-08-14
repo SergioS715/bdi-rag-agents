@@ -12,6 +12,13 @@ OPENAI_LLM_MODEL                 = os.getenv("OPENAI_LLM_MODEL", "gpt-4o-mini")
 OPENAI_LLM_MODEL_CONTEXT_SUMMARY = os.getenv("OPENAI_LLM_MODEL_CONTEXT_SUMMARY", "gpt-4o-mini")
 OPENAI_LLM_MODEL_BDI             = os.getenv("OPENAI_LLM_MODEL_BDI", "gpt-4o-mini")
 
+# DeepSeek — proveedor principal para conversación y BDI
+DEEPSEEK_API_KEY                   = os.getenv("DEEPSEEK_API_KEY")
+DEEPSEEK_BASE_URL                  = os.getenv("DEEPSEEK_BASE_URL", "https://api.deepseek.com")
+DEEPSEEK_LLM_MODEL                 = os.getenv("DEEPSEEK_LLM_MODEL", "deepseek-chat")
+DEEPSEEK_LLM_MODEL_CONTEXT_SUMMARY = os.getenv("DEEPSEEK_LLM_MODEL_CONTEXT_SUMMARY", "deepseek-chat")
+DEEPSEEK_LLM_MODEL_BDI             = os.getenv("DEEPSEEK_LLM_MODEL_BDI", "deepseek-chat")
+
 GROQ_API_KEY                   = os.getenv("GROQ_API_KEY")
 GROQ_LLM_MODEL                 = os.getenv("GROQ_LLM_MODEL", "llama-3.3-70b-versatile")
 GROQ_LLM_MODEL_CONTEXT_SUMMARY = os.getenv("GROQ_LLM_MODEL_CONTEXT_SUMMARY", "llama-3.1-8b-instant")

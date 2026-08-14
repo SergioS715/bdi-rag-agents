@@ -8,6 +8,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import FileResponse
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
+from openai import AsyncOpenAI
 
 # ── Rutas al resto del proyecto ───────────────────────────────────
 APP_DIR  = os.path.dirname(os.path.abspath(__file__))
@@ -26,9 +27,56 @@ from crearActores import ActoresInvolucrados
 from actor import Actor
 from generar_respuesta import obtener_respuesta, obtener_respuesta_streaming
 from reiniciar_conversacion import reiniciar_estado_conversacion
+import config
 
 log = logging.getLogger(__name__)
 logging.basicConfig(level=logging.INFO)
+
+
+# ─────────────────────────────────────────────
+# GUARDRAIL — filtra mensajes fuera de tema
+# ─────────────────────────────────────────────
+
+_guardrail_client = AsyncOpenAI(
+    api_key  = config.DEEPSEEK_API_KEY,
+    base_url = config.DEEPSEEK_BASE_URL,
+)
+
+_GUARDRAIL_SYSTEM = """Eres un clasificador de mensajes para una simulación académica de entrevistas del conflicto armado colombiano (CEV).
+
+RELEVANTE: el mensaje trata sobre el conflicto armado, violencia, desplazamiento, masacres, grupos armados, víctimas, familia, emociones, memoria, historia personal, testimonios, perdón, reconciliación, Colombia, paz, guerra, o cualquier cosa relacionada con la experiencia humana del conflicto.
+BLOQUEADO: el mensaje pide ayuda con programación, código, matemáticas, recetas, idiomas, tecnología, entretenimiento, o cualquier tema sin relación con el conflicto armado colombiano.
+
+Responde ÚNICAMENTE con una palabra: RELEVANTE o BLOQUEADO"""
+
+_DEFLEXION_POR_ROL = {
+    "victima"   : "Eso que me preguntás no tiene que ver con lo que yo viví. Si querés saber algo de mi historia, de lo que pasé, preguntame eso.",
+    "victimario": "Eso no me compete. Estoy aquí para hablar de lo que pasó, de la guerra. No de otras cosas.",
+    "tercero"   : "Eso está por fuera de lo que yo puedo contarles. Pregúntenme sobre lo que presencié, sobre lo que vivió la comunidad.",
+}
+_DEFLEXION_DEFAULT = "Eso no tiene que ver con lo que estamos hablando aquí. Pregúntame sobre lo que viví, sobre el conflicto."
+
+
+async def _guardrail_es_permitido(mensaje: str) -> bool:
+    """Retorna True si el mensaje es relevante para la simulación."""
+    try:
+        response = await _guardrail_client.chat.completions.create(
+            model       = config.DEEPSEEK_LLM_MODEL,
+            messages    = [
+                {"role": "system", "content": _GUARDRAIL_SYSTEM},
+                {"role": "user",   "content": mensaje},
+            ],
+            temperature = 0.0,
+            max_tokens  = 5,
+        )
+        clasificacion = response.choices[0].message.content.strip().upper()
+        permitido = "RELEVANTE" in clasificacion
+        if not permitido:
+            log.info(f"[guardrail] Mensaje bloqueado: {mensaje[:80]!r}")
+        return permitido
+    except Exception as e:
+        log.warning(f"[guardrail] Error en clasificación, permitiendo por defecto: {e}")
+        return True
 
 
 # ─────────────────────────────────────────────
@@ -174,6 +222,10 @@ async def chat(msg: MensajeConversacion):
     sin personalidad (comportamiento original).
     """
     try:
+        if not await _guardrail_es_permitido(msg.mensaje):
+            deflexion = _DEFLEXION_POR_ROL.get(msg.id_actor, _DEFLEXION_DEFAULT)
+            return {"respuesta": deflexion}
+
         condicion = msg.condicion
         usa_bdi   = condicion in CONDICIONES_CON_BDI
         modo_bdi  = usa_bdi and msg.id_actor in _cache_actores_bdi
@@ -248,6 +300,13 @@ async def websocket_chat(websocket: WebSocket):
                 parametros_comportamiento = actor.personalidad.resumen_para_prompt()
 
             try:
+                if not await _guardrail_es_permitido(datos["mensaje"]):
+                    deflexion = _DEFLEXION_POR_ROL.get(id_actor, _DEFLEXION_DEFAULT)
+                    await websocket.send_json({"streaming": True})
+                    await websocket.send_json({"chunk": deflexion})
+                    await websocket.send_json({"respuesta": deflexion, "streaming": False})
+                    continue
+
                 await websocket.send_json({"streaming": True})
 
                 respuesta_completa = ""
